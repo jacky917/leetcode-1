@@ -3,12 +3,12 @@ package l09;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
-public class l09_0127 {
+public class l09_230127 {
 
     Queue<Integer> append = new ArrayDeque<>();
     Queue<Integer> delete = new ArrayDeque<>();
 
-    public l09_0127() {
+    public l09_230127() {
 
     }
 

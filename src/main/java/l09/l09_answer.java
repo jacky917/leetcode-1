@@ -3,10 +3,10 @@ package l09;
 
 import java.util.LinkedList;
 
-public class I09_answer {
+public class l09_answer {
     LinkedList<Integer> A, B;
 
-    public I09_answer(){
+    public l09_answer(){
         A = new LinkedList<Integer>();
         B = new LinkedList<Integer>();
     }
