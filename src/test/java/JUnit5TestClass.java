@@ -1,7 +1,12 @@
+import entity.ListNode;
+import l06.l06_230127;
 import l09.l09_230127;
+import l24.l24_230128;
 import l30.l30_230127;
 import l30.l30_answer;
 import org.junit.Test;
+
+import java.util.Arrays;
 
 public class JUnit5TestClass {
 
@@ -63,4 +68,36 @@ public class JUnit5TestClass {
         System.out.println("min" + l30_answer.min());;
         System.out.println("top" + l30_answer.top());;
     }
+
+    @Test
+    public void l06(){
+        l06_230127 l06_230127 = new l06_230127();
+        // 1 --> 3 --> 2
+        ListNode listNode1 = new ListNode(1);
+        ListNode listNode2 = new ListNode(3);
+        ListNode listNode3 = new ListNode(2);
+        listNode1.setNext(listNode2);
+        listNode2.setNext(listNode3);
+
+//        ListNode listNode1 = new ListNode(1);
+        System.out.println(Arrays.toString(l06_230127.reversePrint(listNode1)));
+    }
+
+    @Test
+    public void l24(){
+        l24_230128 l24_230128 = new l24_230128();
+        // 1 --> 3 --> 2
+        ListNode listNode1 = new ListNode(1);
+        ListNode listNode2 = new ListNode(3);
+        ListNode listNode3 = new ListNode(2);
+        listNode1.setNext(listNode2);
+        listNode2.setNext(listNode3);
+
+        ListNode listNode = l24_230128.reverseList(listNode1);
+
+        // test
+        l06_230127 l06_230127 = new l06_230127();
+        l06_230127.reversePrint(listNode);
+    }
+
 }
