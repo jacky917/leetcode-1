@@ -1,5 +1,6 @@
 import entity.ListNode;
 import entity.RandomNode;
+import l03.l03_answer;
 import l05.l05_230129;
 import l06.l06_230127;
 import l09.l09_230127;
@@ -175,11 +176,24 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 58 - II. 左旋转字符串
+     * https://leetcode.cn/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/?envType=study-plan&id=lcof&plan=lcof&plan_progress=c0ymvt3
      */
     @Test
     public void l58(){
         l58_230129 l58_230129 = new l58_230129();
         System.out.println(l58_230129.reverseLeftWords("lrloseumgh", 6));
+    }
+
+    /**
+     * 剑指 Offer 03. 数组中重复的数字
+     * https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/
+     */
+    @Test
+    public void l03(){
+//        l03_230129 l03_230129 = new l03_230129();
+//        System.out.println(l03_230129.findRepeatNumber(new int[]{2, 3, 1, 0, 2, 5, 3}));;
+        l03_answer l03_answer = new l03_answer();
+        System.out.println(l03_answer.findRepeatNumber(new int[]{2, 3, 1, 0, 2, 5, 3}));
     }
 }
 
