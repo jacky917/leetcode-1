@@ -1,9 +1,12 @@
 import entity.ListNode;
+import entity.RandomNode;
+import l05.l05_230129;
 import l06.l06_230127;
 import l09.l09_230127;
 import l24.l24_230128;
 import l30.l30_230127;
 import l30.l30_answer;
+import l35.l35_230129;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -69,6 +72,10 @@ public class JUnit5TestClass {
         System.out.println("top" + l30_answer.top());;
     }
 
+    /**
+     * 剑指 Offer 06. 从尾到头打印链表
+     * https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/?envType=study-plan&id=lcof&plan=lcof&plan_progress=c0ymvt3
+     */
     @Test
     public void l06(){
         l06_230127 l06_230127 = new l06_230127();
@@ -76,13 +83,17 @@ public class JUnit5TestClass {
         ListNode listNode1 = new ListNode(1);
         ListNode listNode2 = new ListNode(3);
         ListNode listNode3 = new ListNode(2);
-        listNode1.setNext(listNode2);
-        listNode2.setNext(listNode3);
+        listNode1.next = listNode2;
+        listNode2.next = listNode3;
 
 //        ListNode listNode1 = new ListNode(1);
         System.out.println(Arrays.toString(l06_230127.reversePrint(listNode1)));
     }
 
+    /**
+     * 剑指 Offer 24. 反转链表
+     * https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof/?envType=study-plan&id=lcof&plan=lcof&plan_progress=c0ymvt3
+     */
     @Test
     public void l24(){
         l24_230128 l24_230128 = new l24_230128();
@@ -90,8 +101,8 @@ public class JUnit5TestClass {
         ListNode listNode1 = new ListNode(1);
         ListNode listNode2 = new ListNode(3);
         ListNode listNode3 = new ListNode(2);
-        listNode1.setNext(listNode2);
-        listNode2.setNext(listNode3);
+        listNode1.next = listNode2;
+        listNode2.next = listNode3;
 
         ListNode listNode = l24_230128.reverseList(listNode1);
 
@@ -100,4 +111,81 @@ public class JUnit5TestClass {
         l06_230127.reversePrint(listNode);
     }
 
+    /**
+     * 230129測試ListNode Equals
+     */
+    @Test
+    public void listNodeEqualsTest(){
+        ListNode listNode1 = new ListNode(1);
+        ListNode listNode2 = new ListNode(3);
+        ListNode listNode3 = new ListNode(2);
+        listNode1.next = listNode2;
+        listNode2.next = listNode3;
+
+        ListNode listNode4 = new ListNode(1);
+        ListNode listNode5 = new ListNode(3);
+        ListNode listNode6 = new ListNode(2);
+//        ListNode listNode7 = new ListNode(0);
+        listNode4.next = listNode5;
+        listNode5.next = listNode6;
+//        listNode6.next = listNode7;
+
+        System.out.println(listNode1.equals(listNode4));
+    }
+
+    /**
+     * 剑指 Offer 35. 复杂链表的复制
+     * https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/?envType=study-plan&id=lcof&plan=lcof&plan_progress=c0ymvt3
+     */
+    @Test
+    public void l35(){
+        l35_230129 l35_230129 = new l35_230129();
+        RandomNode randomNode1 = new RandomNode(7);
+        RandomNode randomNode2 = new RandomNode(13);
+        RandomNode randomNode3 = new RandomNode(11);
+        RandomNode randomNode4 = new RandomNode(10);
+        RandomNode randomNode5 = new RandomNode(1);
+
+        randomNode1.next = randomNode2;
+        randomNode2.next = randomNode3;
+        randomNode3.next = randomNode4;
+        randomNode4.next = randomNode5;
+        randomNode5.next = null;
+
+        // 為了定義更加清晰 null 也全寫上
+        randomNode1.random = null;
+        randomNode2.random = randomNode1;
+        randomNode3.random = randomNode5;
+        randomNode4.random = randomNode3;
+        randomNode5.random = randomNode1;
+
+        RandomNode copy = l35_230129.copyRandomList(randomNode1);
+    }
+
+    /**
+     * 剑指 Offer 05. 替换空格
+     * https://leetcode.cn/problems/ti-huan-kong-ge-lcof/?envType=study-plan&id=lcof&plan=lcof&plan_progress=c0ymvt3
+     */
+    @Test
+    public void l05(){
+        l05_230129 l05_230129 = new l05_230129();
+        System.out.println(l05_230129.replaceSpace("We are happy."));
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
