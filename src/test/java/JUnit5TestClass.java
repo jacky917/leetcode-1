@@ -7,6 +7,7 @@ import l24.l24_230128;
 import l30.l30_230127;
 import l30.l30_answer;
 import l35.l35_230129;
+import l58.l58_230129;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -55,7 +56,7 @@ public class JUnit5TestClass {
     }
 
     /**
-     * 測試沒empty判斷是否可以
+     * 測試沒empty判斷是否可以(測試結果是不行的)
      * java.util.EmptyStackException
      */
     @Test
@@ -170,6 +171,15 @@ public class JUnit5TestClass {
     public void l05(){
         l05_230129 l05_230129 = new l05_230129();
         System.out.println(l05_230129.replaceSpace("We are happy."));
+    }
+
+    /**
+     * 剑指 Offer 58 - II. 左旋转字符串
+     */
+    @Test
+    public void l58(){
+        l58_230129 l58_230129 = new l58_230129();
+        System.out.println(l58_230129.reverseLeftWords("lrloseumgh", 6));
     }
 }
 
