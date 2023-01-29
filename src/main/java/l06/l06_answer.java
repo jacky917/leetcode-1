@@ -17,8 +17,8 @@ public class l06_answer {
     }
     void recur(ListNode head) {
         if(head == null) return;
-        recur(head.getNext());
-        tmp.add(head.getVal());
+        recur(head.next);
+        tmp.add(head.val);
     }
 
 //    作者：jyd

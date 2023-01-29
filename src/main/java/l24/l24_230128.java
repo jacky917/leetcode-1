@@ -15,8 +15,8 @@ public class l24_230128 {
         ListNode pre = null;
         ListNode cur = head;
         while (cur != null){
-            ListNode next = cur.getNext();
-            cur.setNext(pre);
+            ListNode next = cur.next;
+            cur.next = pre;
             pre = cur;
             cur = next;
         }

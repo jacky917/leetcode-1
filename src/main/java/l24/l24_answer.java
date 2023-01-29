@@ -8,8 +8,8 @@ public class l24_answer {
     public ListNode reverseListPointer(ListNode head) {
         ListNode cur = head, pre = null;
         while (cur != null) {
-            ListNode tmp = cur.getNext(); // 暂存后继节点 cur.next
-            cur.setNext(pre);             // 修改 next 引用指向
+            ListNode tmp = cur.next; // 暂存后继节点 cur.next
+            cur.next = pre;             // 修改 next 引用指向
             pre = cur;                    // pre 暂存 cur
             cur = tmp;                    // cur 访问下一节点
         }
@@ -27,8 +27,8 @@ public class l24_answer {
     }
     private ListNode recur(ListNode cur, ListNode pre) {
         if (cur == null) return pre;          // 终止条件
-        ListNode res = recur(cur.getNext(), cur);  // 递归后继节点
-        cur.setNext(pre);                     // 修改节点引用指向
+        ListNode res = recur(cur.next, cur);  // 递归后继节点
+        cur.next = pre;                     // 修改节点引用指向
         return res;                           // 返回反转链表的头节点
     }
 

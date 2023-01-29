@@ -1,14 +1,11 @@
 package entity;
 
-import lombok.Data;
-
 /**
- * for l06
+ * for l06,l24
  */
-@Data
 public class ListNode {
 
     public ListNode(int x) { val = x; }
-    private int val;
-    private ListNode next;
+    public int val;
+    public ListNode next;
 }
