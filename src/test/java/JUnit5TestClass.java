@@ -1,6 +1,7 @@
 import entity.ListNode;
 import entity.RandomNode;
 import l03.l03_answer;
+import l04.l04_230201;
 import l05.l05_230129;
 import l06.l06_230127;
 import l09.l09_230127;
@@ -24,7 +25,7 @@ public class JUnit5TestClass {
      * https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof
      */
     @Test
-    public void l09(){
+    public void l09() {
         l09_230127 l09_230127 = new l09_230127();
         System.out.println("deleteHead : " + l09_230127.deleteHead());
         l09_230127.appendTail(1);
@@ -42,7 +43,7 @@ public class JUnit5TestClass {
      * https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof
      */
     @Test
-    public void l30(){
+    public void l30() {
         l30_230127 l30_230127 = new l30_230127();
         l30_230127.push(1);
         l30_230127.push(2);
@@ -65,17 +66,23 @@ public class JUnit5TestClass {
      * java.util.EmptyStackException
      */
     @Test
-    public void l30_answer(){
+    public void l30_answer() {
         l30_answer l30_answer = new l30_answer();
         l30_answer.push(1);
-        System.out.println("min" + l30_answer.min());;
-        System.out.println("top" + l30_answer.top());;
+        System.out.println("min" + l30_answer.min());
+        ;
+        System.out.println("top" + l30_answer.top());
+        ;
         l30_answer.pop();
-        System.out.println("min" + l30_answer.min());;
-        System.out.println("top" + l30_answer.top());;
+        System.out.println("min" + l30_answer.min());
+        ;
+        System.out.println("top" + l30_answer.top());
+        ;
         l30_answer.pop();
-        System.out.println("min" + l30_answer.min());;
-        System.out.println("top" + l30_answer.top());;
+        System.out.println("min" + l30_answer.min());
+        ;
+        System.out.println("top" + l30_answer.top());
+        ;
     }
 
     /**
@@ -83,7 +90,7 @@ public class JUnit5TestClass {
      * https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof
      */
     @Test
-    public void l06(){
+    public void l06() {
         l06_230127 l06_230127 = new l06_230127();
         // 1 --> 3 --> 2
         ListNode listNode1 = new ListNode(1);
@@ -101,7 +108,7 @@ public class JUnit5TestClass {
      * https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof
      */
     @Test
-    public void l24(){
+    public void l24() {
         l24_230128 l24_230128 = new l24_230128();
         // 1 --> 3 --> 2
         ListNode listNode1 = new ListNode(1);
@@ -121,7 +128,7 @@ public class JUnit5TestClass {
      * 230129測試ListNode Equals
      */
     @Test
-    public void listNodeEqualsTest(){
+    public void listNodeEqualsTest() {
         ListNode listNode1 = new ListNode(1);
         ListNode listNode2 = new ListNode(3);
         ListNode listNode3 = new ListNode(2);
@@ -144,7 +151,7 @@ public class JUnit5TestClass {
      * https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof
      */
     @Test
-    public void l35(){
+    public void l35() {
         l35_230129 l35_230129 = new l35_230129();
         RandomNode randomNode1 = new RandomNode(7);
         RandomNode randomNode2 = new RandomNode(13);
@@ -173,7 +180,7 @@ public class JUnit5TestClass {
      * https://leetcode.cn/problems/ti-huan-kong-ge-lcof
      */
     @Test
-    public void l05(){
+    public void l05() {
         l05_230129 l05_230129 = new l05_230129();
         System.out.println(l05_230129.replaceSpace("We are happy."));
     }
@@ -183,7 +190,7 @@ public class JUnit5TestClass {
      * https://leetcode.cn/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof
      */
     @Test
-    public void l58(){
+    public void l58() {
         l58_230129 l58_230129 = new l58_230129();
         System.out.println(l58_230129.reverseLeftWords("lrloseumgh", 6));
     }
@@ -193,7 +200,7 @@ public class JUnit5TestClass {
      * https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof
      */
     @Test
-    public void l03(){
+    public void l03() {
 //        l03_230129 l03_230129 = new l03_230129();
 //        System.out.println(l03_230129.findRepeatNumber(new int[]{2, 3, 1, 0, 2, 5, 3}));;
         l03_answer l03_answer = new l03_answer();
@@ -205,11 +212,11 @@ public class JUnit5TestClass {
      * https://leetcode.cn/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof
      */
     @Test
-    public void l53_1(){
+    public void l53_1() {
 //        l53_01_230129 l53_01_230129 = new l53_01_230129();
 //        System.out.println(l53_01_230129.search(new int[]{1,4},4));;
         l53_01_answer l53_01_answer = new l53_01_answer();
-        System.out.println(l53_01_answer.search2(new int[]{5,7,7,8,8,10},8));
+        System.out.println(l53_01_answer.search2(new int[]{5, 7, 7, 8, 8, 10}, 8));
     }
 
     /**
@@ -217,9 +224,9 @@ public class JUnit5TestClass {
      * https://leetcode.cn/problems/que-shi-de-shu-zi-lcof
      */
     @Test
-    public void l53_2(){
+    public void l53_2() {
         l53_02_230131 l53_02_230131 = new l53_02_230131();
-        System.out.println(l53_02_230131.missingNumber(new int[]{0,1,2}));
+        System.out.println(l53_02_230131.missingNumber(new int[]{0, 1, 2}));
     }
 
     /**
@@ -227,9 +234,9 @@ public class JUnit5TestClass {
      * https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof
      */
     @Test
-    public void l11(){
+    public void l11() {
         l11_230131 l11_230131 = new l11_230131();
-        System.out.println(l11_230131.minArray(new int[]{3,1,1,1,1}));
+        System.out.println(l11_230131.minArray(new int[]{3, 1, 1, 1, 1}));
     }
 
     /**
@@ -237,11 +244,36 @@ public class JUnit5TestClass {
      * https://leetcode.cn/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof
      */
     @Test
-    public void l50(){
+    public void l50() {
         l50_230131 l50_230131 = new l50_230131();
         System.out.println(l50_230131.firstUniqChar("aba"));
     }
 
+    /**
+     * 剑指 Offer 04. 二维数组中的查找
+     * https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof
+     */
+    @Test
+    public void l04() {
+//        l04_230131 l04_230131 = new l04_230131();
+        int[][] arr = {
+                {1,   4,  7, 11, 15},
+                {2,   5,  8, 12, 19},
+                {3,   6,  9, 16, 22},
+                {10, 13, 14, 17, 24},
+                {18, 21, 23, 26, 30}
+        };
+//        int[][] arr = {
+//                {5,6},
+//        };
+//        int[][] arr = {
+//                {5},
+//                {6}
+//        };
+//        System.out.println(l04_230131.findNumberIn2DArray(arr, 6));
+        l04_230201 l04_230201 = new l04_230201();
+        System.out.println(l04_230201.findNumberIn2DArray(arr,20));
+    }
 }
 
 
