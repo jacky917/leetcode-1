@@ -1,6 +1,6 @@
-package l53;
+package l53_1;
 
-public class l53_230129 {
+public class l53_01_230129 {
 
     public int search(int[] nums, int target) {
         if (nums.length == 0) return 0;

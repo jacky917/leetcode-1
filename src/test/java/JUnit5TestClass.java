@@ -8,7 +8,8 @@ import l24.l24_230128;
 import l30.l30_230127;
 import l30.l30_answer;
 import l35.l35_230129;
-import l53.l53_answer;
+import l53_1.l53_01_answer;
+import l53_2.l53_02_230131;
 import l58.l58_230129;
 import org.junit.Test;
 
@@ -18,7 +19,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 09. 用两个栈实现队列
-     * https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/
+     * https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof
      */
     @Test
     public void l09(){
@@ -36,7 +37,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 30. 包含min函数的栈
-     * https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/?envType=study-plan&id=lcof&plan=lcof&plan_progress=c0ymvt3
+     * https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof
      */
     @Test
     public void l30(){
@@ -77,7 +78,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 06. 从尾到头打印链表
-     * https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/?envType=study-plan&id=lcof&plan=lcof&plan_progress=c0ymvt3
+     * https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof
      */
     @Test
     public void l06(){
@@ -95,7 +96,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 24. 反转链表
-     * https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof/?envType=study-plan&id=lcof&plan=lcof&plan_progress=c0ymvt3
+     * https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof
      */
     @Test
     public void l24(){
@@ -138,7 +139,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 35. 复杂链表的复制
-     * https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/?envType=study-plan&id=lcof&plan=lcof&plan_progress=c0ymvt3
+     * https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof
      */
     @Test
     public void l35(){
@@ -167,7 +168,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 05. 替换空格
-     * https://leetcode.cn/problems/ti-huan-kong-ge-lcof/?envType=study-plan&id=lcof&plan=lcof&plan_progress=c0ymvt3
+     * https://leetcode.cn/problems/ti-huan-kong-ge-lcof
      */
     @Test
     public void l05(){
@@ -177,7 +178,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 58 - II. 左旋转字符串
-     * https://leetcode.cn/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/?envType=study-plan&id=lcof&plan=lcof&plan_progress=c0ymvt3
+     * https://leetcode.cn/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof
      */
     @Test
     public void l58(){
@@ -187,7 +188,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 03. 数组中重复的数字
-     * https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/
+     * https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof
      */
     @Test
     public void l03(){
@@ -197,15 +198,28 @@ public class JUnit5TestClass {
         System.out.println(l03_answer.findRepeatNumber(new int[]{2, 3, 1, 0, 2, 5, 3}));
     }
 
+    /**
+     * 剑指 Offer 53 - I. 在排序数组中查找数字 I
+     * https://leetcode.cn/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof
+     */
     @Test
-    public void l53(){
-//        l53_230129 l53_230129 = new l53_230129();
-//        System.out.println(l53_230129.search(new int[]{1,4},4));;
-
-        l53_answer l53_answer = new l53_answer();
-        System.out.println(l53_answer.search2(new int[]{5,7,7,8,8,10},8));
-
+    public void l53_1(){
+//        l53_01_230129 l53_01_230129 = new l53_01_230129();
+//        System.out.println(l53_01_230129.search(new int[]{1,4},4));;
+        l53_01_answer l53_01_answer = new l53_01_answer();
+        System.out.println(l53_01_answer.search2(new int[]{5,7,7,8,8,10},8));
     }
+
+    /**
+     * 剑指 Offer 53 - II. 0～n-1中缺失的数字
+     * https://leetcode.cn/problems/que-shi-de-shu-zi-lcof
+     */
+    @Test
+    public void l53_2(){
+        l53_02_230131 l53_02_230131 = new l53_02_230131();
+        System.out.println(l53_02_230131.missingNumber(new int[]{0,1,2}));
+    }
+
 }
 
 

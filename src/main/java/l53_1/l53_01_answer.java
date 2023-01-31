@@ -1,6 +1,6 @@
-package l53;
+package l53_1;
 
-public class l53_answer {
+public class l53_01_answer {
 
     public int search1(int[] nums, int target) {
         // 搜索右边界 right
