@@ -4,10 +4,12 @@ import l03.l03_answer;
 import l05.l05_230129;
 import l06.l06_230127;
 import l09.l09_230127;
+import l11.l11_230131;
 import l24.l24_230128;
 import l30.l30_230127;
 import l30.l30_answer;
 import l35.l35_230129;
+import l50.l50_230131;
 import l53_1.l53_01_answer;
 import l53_2.l53_02_230131;
 import l58.l58_230129;
@@ -218,6 +220,26 @@ public class JUnit5TestClass {
     public void l53_2(){
         l53_02_230131 l53_02_230131 = new l53_02_230131();
         System.out.println(l53_02_230131.missingNumber(new int[]{0,1,2}));
+    }
+
+    /**
+     * 剑指 Offer 11. 旋转数组的最小数字
+     * https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof
+     */
+    @Test
+    public void l11(){
+        l11_230131 l11_230131 = new l11_230131();
+        System.out.println(l11_230131.minArray(new int[]{3,1,1,1,1}));
+    }
+
+    /**
+     * 剑指 Offer 50. 第一个只出现一次的字符
+     * https://leetcode.cn/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof
+     */
+    @Test
+    public void l50(){
+        l50_230131 l50_230131 = new l50_230131();
+        System.out.println(l50_230131.firstUniqChar("aba"));
     }
 
 }
