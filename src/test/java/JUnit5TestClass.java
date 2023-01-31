@@ -8,6 +8,7 @@ import l24.l24_230128;
 import l30.l30_230127;
 import l30.l30_answer;
 import l35.l35_230129;
+import l53.l53_answer;
 import l58.l58_230129;
 import org.junit.Test;
 
@@ -194,6 +195,16 @@ public class JUnit5TestClass {
 //        System.out.println(l03_230129.findRepeatNumber(new int[]{2, 3, 1, 0, 2, 5, 3}));;
         l03_answer l03_answer = new l03_answer();
         System.out.println(l03_answer.findRepeatNumber(new int[]{2, 3, 1, 0, 2, 5, 3}));
+    }
+
+    @Test
+    public void l53(){
+//        l53_230129 l53_230129 = new l53_230129();
+//        System.out.println(l53_230129.search(new int[]{1,4},4));;
+
+        l53_answer l53_answer = new l53_answer();
+        System.out.println(l53_answer.search2(new int[]{5,7,7,8,8,10},8));
+
     }
 }
 
