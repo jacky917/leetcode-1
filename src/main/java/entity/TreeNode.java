@@ -1,7 +1,7 @@
 package entity;
 
 /**
- * for l32
+ * for l26,l32
  */
 public class TreeNode {
     public int val;

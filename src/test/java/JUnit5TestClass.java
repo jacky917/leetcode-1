@@ -8,6 +8,7 @@ import l06.l06_230127;
 import l09.l09_230127;
 import l11.l11_230131;
 import l24.l24_230128;
+import l26.l26_230202;
 import l30.l30_230127;
 import l30.l30_answer;
 import l32_01.l32_01_230201;
@@ -310,6 +311,29 @@ public class JUnit5TestClass {
         // l32 iii
         l32_03_230202 l32_03_230202 = new l32_03_230202();
         System.out.println(l32_03_230202.levelOrder(treeNode1));
+    }
+
+    @Test
+    public void l26(){
+        l26_230202 l26_230202 = new l26_230202();
+
+        TreeNode treeANode1 = new TreeNode(3);
+        TreeNode treeANode2 = new TreeNode(4);
+        TreeNode treeANode3 = new TreeNode(5);
+        TreeNode treeANode4 = new TreeNode(1);
+        TreeNode treeANode5 = new TreeNode(2);
+
+        treeANode1.left = treeANode2;
+        treeANode1.right = treeANode3;
+        treeANode2.left = treeANode4;
+        treeANode2.right = treeANode5;
+
+        TreeNode treeBNode1 = new TreeNode(4);
+        TreeNode treeBNode2 = new TreeNode(1);
+
+        treeBNode1.left = treeBNode2;
+
+        System.out.println(l26_230202.isSubStructure(treeANode1,treeBNode1));
     }
 }
 
