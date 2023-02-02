@@ -1,5 +1,6 @@
 import entity.ListNode;
 import entity.RandomNode;
+import entity.TreeNode;
 import l03.l03_answer;
 import l04.l04_230201;
 import l05.l05_230129;
@@ -9,6 +10,9 @@ import l11.l11_230131;
 import l24.l24_230128;
 import l30.l30_230127;
 import l30.l30_answer;
+import l32_01.l32_01_230201;
+import l32_02.l32_02_230201;
+import l32_03.l32_03_230202;
 import l35.l35_230129;
 import l50.l50_230131;
 import l53_1.l53_01_answer;
@@ -22,7 +26,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 09. 用两个栈实现队列
-     * https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof
+     * https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/
      */
     @Test
     public void l09() {
@@ -40,7 +44,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 30. 包含min函数的栈
-     * https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof
+     * https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/
      */
     @Test
     public void l30() {
@@ -87,7 +91,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 06. 从尾到头打印链表
-     * https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof
+     * https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/
      */
     @Test
     public void l06() {
@@ -105,7 +109,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 24. 反转链表
-     * https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof
+     * https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof/
      */
     @Test
     public void l24() {
@@ -148,7 +152,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 35. 复杂链表的复制
-     * https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof
+     * https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/
      */
     @Test
     public void l35() {
@@ -177,7 +181,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 05. 替换空格
-     * https://leetcode.cn/problems/ti-huan-kong-ge-lcof
+     * https://leetcode.cn/problems/ti-huan-kong-ge-lcof/
      */
     @Test
     public void l05() {
@@ -187,7 +191,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 58 - II. 左旋转字符串
-     * https://leetcode.cn/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof
+     * https://leetcode.cn/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/
      */
     @Test
     public void l58() {
@@ -197,7 +201,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 03. 数组中重复的数字
-     * https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof
+     * https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/
      */
     @Test
     public void l03() {
@@ -209,7 +213,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 53 - I. 在排序数组中查找数字 I
-     * https://leetcode.cn/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof
+     * https://leetcode.cn/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/
      */
     @Test
     public void l53_1() {
@@ -221,7 +225,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 53 - II. 0～n-1中缺失的数字
-     * https://leetcode.cn/problems/que-shi-de-shu-zi-lcof
+     * https://leetcode.cn/problems/que-shi-de-shu-zi-lcof/
      */
     @Test
     public void l53_2() {
@@ -231,7 +235,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 11. 旋转数组的最小数字
-     * https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof
+     * https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/
      */
     @Test
     public void l11() {
@@ -241,7 +245,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 50. 第一个只出现一次的字符
-     * https://leetcode.cn/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof
+     * https://leetcode.cn/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/
      */
     @Test
     public void l50() {
@@ -251,7 +255,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 04. 二维数组中的查找
-     * https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof
+     * https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/
      */
     @Test
     public void l04() {
@@ -273,6 +277,39 @@ public class JUnit5TestClass {
 //        System.out.println(l04_230131.findNumberIn2DArray(arr, 6));
         l04_230201 l04_230201 = new l04_230201();
         System.out.println(l04_230201.findNumberIn2DArray(arr,20));
+    }
+
+    /**
+     * 剑指 Offer 32. 从上到下打印二叉树 1~3
+     * https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/
+     * https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/
+     * https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/
+     */
+    @Test
+    public void l32(){
+
+        TreeNode treeNode1 = new TreeNode(3);
+        TreeNode treeNode2 = new TreeNode(9);
+        TreeNode treeNode3 = new TreeNode(20);
+        TreeNode treeNode4 = new TreeNode(15);
+        TreeNode treeNode5 = new TreeNode(7);
+
+        treeNode1.left = treeNode2;
+        treeNode1.right = treeNode3;
+        treeNode3.left = treeNode4;
+        treeNode3.right = treeNode5;
+
+        // l32 i
+        l32_01_230201 l32_01_230201 = new l32_01_230201();
+        System.out.println(Arrays.toString(l32_01_230201.levelOrder(treeNode1)));
+        System.out.println("------------------------------");
+        // l32 ii
+        l32_02_230201 l32_02_230201 = new l32_02_230201();
+        System.out.println(l32_02_230201.levelOrder(treeNode1));
+        System.out.println("------------------------------");
+        // l32 iii
+        l32_03_230202 l32_03_230202 = new l32_03_230202();
+        System.out.println(l32_03_230202.levelOrder(treeNode1));
     }
 }
 
