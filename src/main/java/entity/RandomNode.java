@@ -1,9 +1,5 @@
 package entity;
 
-
-/**
- * for l35
- */
 public class RandomNode {
     public int val;
     public RandomNode next;

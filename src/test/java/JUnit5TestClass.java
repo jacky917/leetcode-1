@@ -9,6 +9,9 @@ import l09.l09_230127;
 import l11.l11_230131;
 import l24.l24_230128;
 import l26.l26_230202;
+import l27.l27_230202;
+import l28.l28_230202;
+import l28.l28_answer;
 import l30.l30_230127;
 import l30.l30_answer;
 import l32_01.l32_01_230201;
@@ -313,6 +316,10 @@ public class JUnit5TestClass {
         System.out.println(l32_03_230202.levelOrder(treeNode1));
     }
 
+    /**
+     * 剑指 Offer 26. 树的子结构
+     * https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/
+     */
     @Test
     public void l26(){
         l26_230202 l26_230202 = new l26_230202();
@@ -334,6 +341,61 @@ public class JUnit5TestClass {
         treeBNode1.left = treeBNode2;
 
         System.out.println(l26_230202.isSubStructure(treeANode1,treeBNode1));
+    }
+
+    /**
+     * 剑指 Offer 27. 二叉树的镜像
+     * https://leetcode.cn/problems/er-cha-shu-de-jing-xiang-lcof/
+     */
+    @Test
+    public void l27(){
+        TreeNode treeANode1 = new TreeNode(4);
+        TreeNode treeANode2 = new TreeNode(2);
+        TreeNode treeANode3 = new TreeNode(7);
+        TreeNode treeANode4 = new TreeNode(1);
+        TreeNode treeANode5 = new TreeNode(3);
+        TreeNode treeANode6 = new TreeNode(6);
+        TreeNode treeANode7 = new TreeNode(9);
+        treeANode1.left = treeANode2;
+        treeANode1.right = treeANode3;
+        treeANode2.left = treeANode4;
+        treeANode2.right = treeANode5;
+        treeANode3.left = treeANode6;
+        treeANode3.right = treeANode7;
+        l27_230202 l27_230202 = new l27_230202();
+        System.out.println(treeANode1);
+        System.out.println("-------------------------");
+        System.out.println(l27_230202.mirrorTree(treeANode1));
+    }
+
+    /**
+     * 剑指 Offer 28. 对称的二叉树
+     * https://leetcode.cn/problems/dui-cheng-de-er-cha-shu-lcof/
+     */
+    @Test
+    public void l28(){
+
+        TreeNode treeANode1 = new TreeNode(1);
+        TreeNode treeANode2 = new TreeNode(2);
+        TreeNode treeANode3 = new TreeNode(2);
+        TreeNode treeANode4 = new TreeNode(3);
+        TreeNode treeANode5 = new TreeNode(4);
+        TreeNode treeANode6 = new TreeNode(4);
+        TreeNode treeANode7 = new TreeNode(3);
+        treeANode1.left = treeANode2;
+        treeANode1.right = treeANode3;
+        treeANode2.left = treeANode4;
+        treeANode2.right = treeANode5;
+        treeANode3.left = treeANode6;
+        treeANode3.right = treeANode7;
+
+        l28_230202 l28_230202 = new l28_230202();
+        System.out.println(l28_230202.isSymmetric(treeANode1));
+
+        System.out.println("-------------------------");
+
+        l28_answer l28_answer = new l28_answer();
+        System.out.println(l28_answer.isSymmetric(null));
     }
 }
 

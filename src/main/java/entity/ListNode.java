@@ -2,9 +2,6 @@ package entity;
 
 import java.util.Objects;
 
-/**
- * for l06,l24
- */
 public class ListNode {
 
     public ListNode(int x) { val = x; }

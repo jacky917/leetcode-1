@@ -1,8 +1,9 @@
 package entity;
 
-/**
- * for l26,l32
- */
+import java.util.LinkedList;
+import java.util.Queue;
+
+
 public class TreeNode {
     public int val;
     public TreeNode left;
@@ -10,5 +11,26 @@ public class TreeNode {
 
     public TreeNode(int x) {
         val = x;
+    }
+
+    @Override
+    public String toString() {
+        Queue<TreeNode> queue = new LinkedList<>();
+        StringBuilder result = new StringBuilder();
+        queue.add(this);
+        while (!queue.isEmpty()) {
+            StringBuilder tmp = new StringBuilder();
+            for (int i = queue.size(); i > 0 ; i--){
+                TreeNode poll = queue.poll();
+                assert poll != null;
+                tmp.append(poll.val).append(",");
+                if (poll.left != null)
+                    queue.add(poll.left);
+                if (poll.right != null)
+                    queue.add(poll.right);
+            }
+            result.append(tmp).append("\n");
+        }
+        return result.toString();
     }
 }
