@@ -6,6 +6,8 @@ import l04.l04_230201;
 import l05.l05_230129;
 import l06.l06_230127;
 import l09.l09_230127;
+import l10_01.l10_01_230203;
+import l10_02.l10_02_230203;
 import l11.l11_230131;
 import l24.l24_230128;
 import l26.l26_230202;
@@ -396,6 +398,22 @@ public class JUnit5TestClass {
 
         l28_answer l28_answer = new l28_answer();
         System.out.println(l28_answer.isSymmetric(null));
+    }
+
+    /**
+     * 剑指 Offer 10- I. 斐波那契数列
+     * 剑指 Offer 10- II. 青蛙跳台阶问题
+     * https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/
+     * https://leetcode.cn/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/
+     */
+    @Test
+    public void l10(){
+        l10_01_230203 l10_01_230203 = new l10_01_230203();
+        System.out.println(l10_01_230203.fibRecur(50));
+        System.out.println(l10_01_230203.fibDynamic(50));
+        System.out.println("-----------------------------");
+        l10_02_230203 l10_02_230203 = new l10_02_230203();
+        System.out.println(l10_02_230203.numWays(2));
     }
 }
 
