@@ -20,10 +20,12 @@ import l32_01.l32_01_230201;
 import l32_02.l32_02_230201;
 import l32_03.l32_03_230202;
 import l35.l35_230129;
+import l42.l42_answer;
 import l50.l50_230131;
 import l53_1.l53_01_answer;
 import l53_2.l53_02_230131;
 import l58.l58_230129;
+import l63.l63_230204;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -414,6 +416,27 @@ public class JUnit5TestClass {
         System.out.println("-----------------------------");
         l10_02_230203 l10_02_230203 = new l10_02_230203();
         System.out.println(l10_02_230203.numWays(2));
+    }
+
+    /**
+     * 剑指 Offer 63. 股票的最大利润
+     * https://leetcode.cn/problems/gu-piao-de-zui-da-li-run-lcof/
+     */
+    @Test
+    public void l63(){
+        l63_230204 l63_230204 = new l63_230204();
+        System.out.println(l63_230204.maxProfit(new int[]{7,1,5,3,6,4}));
+    }
+
+    /**
+     * 剑指 Offer 42. 连续子数组的最大和
+     * https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/
+     */
+    @Test
+    public void l42(){
+        l42_answer l42_answer = new l42_answer();
+        System.out.println(l42_answer.maxSubArray1(new int[]{999,-9999,50}));
+        System.out.println(l42_answer.maxSubArray2(new int[]{999,-9999,50}));
     }
 }
 
