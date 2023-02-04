@@ -21,6 +21,7 @@ import l32_02.l32_02_230201;
 import l32_03.l32_03_230202;
 import l35.l35_230129;
 import l42.l42_answer;
+import l47.l47_230204;
 import l50.l50_230131;
 import l53_1.l53_01_answer;
 import l53_2.l53_02_230131;
@@ -437,6 +438,17 @@ public class JUnit5TestClass {
         l42_answer l42_answer = new l42_answer();
         System.out.println(l42_answer.maxSubArray1(new int[]{999,-9999,50}));
         System.out.println(l42_answer.maxSubArray2(new int[]{999,-9999,50}));
+    }
+
+    /**
+     * 剑指 Offer 47. 礼物的最大价值
+     * https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/
+     */
+    @Test
+    public void l47(){
+//        當前 + Math.max(右邊，下邊)
+        l47_230204 l47_230204 = new l47_230204();
+        System.out.println(l47_230204.maxValue(new int[][]{{1,3,1},{1,5,1},{4,2,1}}));
     }
 }
 
