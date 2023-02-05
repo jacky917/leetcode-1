@@ -11,6 +11,8 @@ import l10_02.l10_02_230203;
 import l11.l11_230131;
 import l18.l18_230205;
 import l18.l18_answer;
+import l22.l22_230206;
+import l22.l22_answer;
 import l24.l24_230128;
 import l26.l26_230202;
 import l27.l27_230202;
@@ -490,6 +492,31 @@ public class JUnit5TestClass {
 
         l18_answer l18_answer = new l18_answer();
         System.out.println(l18_answer.deleteNode(listNode1, 5));
+    }
+
+    /**
+     * 剑指 Offer 22. 链表中倒数第k个节点
+     * <a href="https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/">l22</a>
+     */
+    @Test
+    public void l22(){
+
+        ListNode listNode1 = new ListNode(1);
+        ListNode listNode2 = new ListNode(2);
+        ListNode listNode3 = new ListNode(3);
+        ListNode listNode4 = new ListNode(4);
+        ListNode listNode5 = new ListNode(5);
+
+        listNode1.next = listNode2;
+        listNode2.next = listNode3;
+        listNode3.next = listNode4;
+        listNode4.next = listNode5;
+
+        l22_230206 l22230206 = new l22_230206();
+        System.out.println(l22230206.getKthFromEnd(listNode1, 3));
+
+        l22_answer l22Answer = new l22_answer();
+        System.out.println(l22Answer.getKthFromEnd(listNode1, 3));
     }
 }
 
