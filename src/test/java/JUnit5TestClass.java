@@ -21,6 +21,7 @@ import l32_02.l32_02_230201;
 import l32_03.l32_03_230202;
 import l35.l35_230129;
 import l42.l42_answer;
+import l46.l46_230205;
 import l47.l47_230204;
 import l50.l50_230131;
 import l53_1.l53_01_answer;
@@ -449,6 +450,25 @@ public class JUnit5TestClass {
 //        當前 + Math.max(右邊，下邊)
         l47_230204 l47_230204 = new l47_230204();
         System.out.println(l47_230204.maxValue(new int[][]{{1,3,1},{1,5,1},{4,2,1}}));
+    }
+
+    /**
+     * 剑指 Offer 46. 把数字翻译成字符串
+     * https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/
+     */
+    @Test
+    public void l46(){
+        l46_230205 l46_230205 = new l46_230205();
+        System.out.println(l46_230205.translateNum(25));
+    }
+
+    /**
+     * 剑指 Offer 48. 最长不含重复字符的子字符串
+     * https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/
+     */
+    @Test
+    public void l48(){
+
     }
 }
 
