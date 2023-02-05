@@ -9,6 +9,8 @@ import l09.l09_230127;
 import l10_01.l10_01_230203;
 import l10_02.l10_02_230203;
 import l11.l11_230131;
+import l18.l18_230205;
+import l18.l18_answer;
 import l24.l24_230128;
 import l26.l26_230202;
 import l27.l27_230202;
@@ -37,7 +39,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 09. 用两个栈实现队列
-     * https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/
+     * <a href="https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/">l09</a>
      */
     @Test
     public void l09() {
@@ -55,7 +57,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 30. 包含min函数的栈
-     * https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/
+     * <a href="https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/">l30</a>
      */
     @Test
     public void l30() {
@@ -85,24 +87,18 @@ public class JUnit5TestClass {
         l30_answer l30_answer = new l30_answer();
         l30_answer.push(1);
         System.out.println("min" + l30_answer.min());
-        ;
         System.out.println("top" + l30_answer.top());
-        ;
         l30_answer.pop();
         System.out.println("min" + l30_answer.min());
-        ;
         System.out.println("top" + l30_answer.top());
-        ;
         l30_answer.pop();
         System.out.println("min" + l30_answer.min());
-        ;
         System.out.println("top" + l30_answer.top());
-        ;
     }
 
     /**
      * 剑指 Offer 06. 从尾到头打印链表
-     * https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/
+     * <a href="https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/">l06</a>
      */
     @Test
     public void l06() {
@@ -120,7 +116,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 24. 反转链表
-     * https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof/
+     * <a href="https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof/">l24</a>
      */
     @Test
     public void l24() {
@@ -163,7 +159,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 35. 复杂链表的复制
-     * https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/
+     * <a href="https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/">l35</a>
      */
     @Test
     public void l35() {
@@ -188,11 +184,12 @@ public class JUnit5TestClass {
         randomNode5.random = randomNode1;
 
         RandomNode copy = l35_230129.copyRandomList(randomNode1);
+        System.out.println(copy + ", " + randomNode1);
     }
 
     /**
      * 剑指 Offer 05. 替换空格
-     * https://leetcode.cn/problems/ti-huan-kong-ge-lcof/
+     * <a href="https://leetcode.cn/problems/ti-huan-kong-ge-lcof/">l05</a>
      */
     @Test
     public void l05() {
@@ -202,7 +199,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 58 - II. 左旋转字符串
-     * https://leetcode.cn/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/
+     * <a href="https://leetcode.cn/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/">l58</a>
      */
     @Test
     public void l58() {
@@ -212,7 +209,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 03. 数组中重复的数字
-     * https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/
+     * <a href="https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/">l03</a>
      */
     @Test
     public void l03() {
@@ -224,7 +221,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 53 - I. 在排序数组中查找数字 I
-     * https://leetcode.cn/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/
+     * <a href="https://leetcode.cn/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/">l53-I</a>
      */
     @Test
     public void l53_1() {
@@ -236,7 +233,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 53 - II. 0～n-1中缺失的数字
-     * https://leetcode.cn/problems/que-shi-de-shu-zi-lcof/
+     * <a href="https://leetcode.cn/problems/que-shi-de-shu-zi-lcof/">l53-II</a>
      */
     @Test
     public void l53_2() {
@@ -246,7 +243,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 11. 旋转数组的最小数字
-     * https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/
+     * <a href="https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/">l11</a>
      */
     @Test
     public void l11() {
@@ -256,7 +253,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 50. 第一个只出现一次的字符
-     * https://leetcode.cn/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/
+     * <a href="https://leetcode.cn/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/">l50</a>
      */
     @Test
     public void l50() {
@@ -266,7 +263,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 04. 二维数组中的查找
-     * https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/
+     * <a href="https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/">l04</a>
      */
     @Test
     public void l04() {
@@ -292,9 +289,9 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 32. 从上到下打印二叉树 1~3
-     * https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/
-     * https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/
-     * https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/
+     * <a href="https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/">l32-I</a>
+     * <a href="https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/">l32-II</a>
+     * <a href="https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/">l32-III</a>
      */
     @Test
     public void l32(){
@@ -325,7 +322,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 26. 树的子结构
-     * https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/
+     * <a href="https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/">l26</a>
      */
     @Test
     public void l26(){
@@ -352,7 +349,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 27. 二叉树的镜像
-     * https://leetcode.cn/problems/er-cha-shu-de-jing-xiang-lcof/
+     * <a href="https://leetcode.cn/problems/er-cha-shu-de-jing-xiang-lcof/">l27</a>
      */
     @Test
     public void l27(){
@@ -377,7 +374,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 28. 对称的二叉树
-     * https://leetcode.cn/problems/dui-cheng-de-er-cha-shu-lcof/
+     * <a href="https://leetcode.cn/problems/dui-cheng-de-er-cha-shu-lcof/">l28</a>
      */
     @Test
     public void l28(){
@@ -408,8 +405,8 @@ public class JUnit5TestClass {
     /**
      * 剑指 Offer 10- I. 斐波那契数列
      * 剑指 Offer 10- II. 青蛙跳台阶问题
-     * https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/
-     * https://leetcode.cn/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/
+     * <a href="https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/">l10-I</a>
+     * <a href="https://leetcode.cn/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/">l10-II</a>
      */
     @Test
     public void l10(){
@@ -423,7 +420,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 63. 股票的最大利润
-     * https://leetcode.cn/problems/gu-piao-de-zui-da-li-run-lcof/
+     * <a href="https://leetcode.cn/problems/gu-piao-de-zui-da-li-run-lcof/">l63</a>
      */
     @Test
     public void l63(){
@@ -433,7 +430,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 42. 连续子数组的最大和
-     * https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/
+     * <a href="https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/">l42</a>
      */
     @Test
     public void l42(){
@@ -444,7 +441,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 47. 礼物的最大价值
-     * https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/
+     * <a href="https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/">l47</a>
      */
     @Test
     public void l47(){
@@ -455,7 +452,7 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 46. 把数字翻译成字符串
-     * https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/
+     * <a href="https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/">l46</a>
      */
     @Test
     public void l46(){
@@ -465,12 +462,34 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 48. 最长不含重复字符的子字符串
-     * https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/
+     * <a href="https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/">l48</a>
      */
     @Test
     public void l48(){
         l48_230205 l48230205 = new l48_230205();
         System.out.println(l48230205.lengthOfLongestSubstring("pwwkew"));
+    }
+
+    /**
+     * 剑指 Offer 18. 删除链表的节点
+     * <a href="https://leetcode.cn/problems/shan-chu-lian-biao-de-jie-dian-lcof/">l18</a>
+     */
+    @Test
+    public void l18(){
+        ListNode listNode1 = new ListNode(4);
+        ListNode listNode2 = new ListNode(5);
+        ListNode listNode3 = new ListNode(1);
+        ListNode listNode4 = new ListNode(9);
+
+        listNode1.next = listNode2;
+        listNode2.next = listNode3;
+        listNode3.next = listNode4;
+
+        l18_230205 l18230205 = new l18_230205();
+        System.out.println(l18230205.deleteNode(listNode1, 5));
+
+        l18_answer l18_answer = new l18_answer();
+        System.out.println(l18_answer.deleteNode(listNode1, 5));
     }
 }
 

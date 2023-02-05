@@ -26,4 +26,9 @@ public class ListNode {
         return Objects.hash(val, next);
     }
 
+    @Override
+    public String toString() {
+        String n = next == null ? "" : next.toString();
+        return this.val + "," + n;
+    }
 }
