@@ -23,6 +23,7 @@ import l35.l35_230129;
 import l42.l42_answer;
 import l46.l46_230205;
 import l47.l47_230204;
+import l48.l48_230205;
 import l50.l50_230131;
 import l53_1.l53_01_answer;
 import l53_2.l53_02_230131;
@@ -468,7 +469,8 @@ public class JUnit5TestClass {
      */
     @Test
     public void l48(){
-
+        l48_230205 l48230205 = new l48_230205();
+        System.out.println(l48230205.lengthOfLongestSubstring("pwwkew"));
     }
 }
 
