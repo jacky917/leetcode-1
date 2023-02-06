@@ -38,6 +38,7 @@ import l52.l52_230206;
 import l52.l52_answer;
 import l53_1.l53_01_answer;
 import l53_2.l53_02_230131;
+import l57.l57_230206;
 import l58.l58_230129;
 import l63.l63_230204;
 import org.junit.Test;
@@ -600,6 +601,16 @@ public class JUnit5TestClass {
 
         l21_answer l21Answer = new l21_answer();
         System.out.println(Arrays.toString(l21Answer.exchange(new int[]{1, 3, 5})));
+    }
+
+    /**
+     * 剑指 Offer 57. 和为s的两个数字
+     * <a href="https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/">l57</a>
+     */
+    @Test
+    public void l57(){
+        l57_230206 l57230206 = new l57_230206();
+        System.out.println(Arrays.toString(l57230206.twoSum(new int[]{2, 7, 11, 15}, 9)));
     }
 }
 
