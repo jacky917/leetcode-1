@@ -1,6 +1,6 @@
 package l24;
 
-import entity.ListNode;
+import entity.ListNode2;
 
 // pre  cur  next
 //  |    |    |
@@ -11,11 +11,11 @@ import entity.ListNode;
 //  NULL<---1<---2<---3<---4<---5<---NULL
 // 有提示
 public class l24_230128 {
-    public ListNode reverseList(ListNode head) {
-        ListNode pre = null;
-        ListNode cur = head;
+    public ListNode2 reverseList(ListNode2 head) {
+        ListNode2 pre = null;
+        ListNode2 cur = head;
         while (cur != null){
-            ListNode next = cur.next;
+            ListNode2 next = cur.next;
             cur.next = pre;
             pre = cur;
             cur = next;

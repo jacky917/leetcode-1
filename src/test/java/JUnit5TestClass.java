@@ -1,4 +1,5 @@
 import entity.ListNode;
+import entity.ListNode2;
 import entity.RandomNode;
 import entity.TreeNode;
 import l03.l03_answer;
@@ -31,6 +32,8 @@ import l46.l46_230205;
 import l47.l47_230204;
 import l48.l48_230205;
 import l50.l50_230131;
+import l52.l52_230206;
+import l52.l52_answer;
 import l53_1.l53_01_answer;
 import l53_2.l53_02_230131;
 import l58.l58_230129;
@@ -108,9 +111,9 @@ public class JUnit5TestClass {
     public void l06() {
         l06_230127 l06_230127 = new l06_230127();
         // 1 --> 3 --> 2
-        ListNode listNode1 = new ListNode(1);
-        ListNode listNode2 = new ListNode(3);
-        ListNode listNode3 = new ListNode(2);
+        ListNode2 listNode1 = new ListNode2(1);
+        ListNode2 listNode2 = new ListNode2(3);
+        ListNode2 listNode3 = new ListNode2(2);
         listNode1.next = listNode2;
         listNode2.next = listNode3;
 
@@ -126,13 +129,13 @@ public class JUnit5TestClass {
     public void l24() {
         l24_230128 l24_230128 = new l24_230128();
         // 1 --> 3 --> 2
-        ListNode listNode1 = new ListNode(1);
-        ListNode listNode2 = new ListNode(3);
-        ListNode listNode3 = new ListNode(2);
+        ListNode2 listNode1 = new ListNode2(1);
+        ListNode2 listNode2 = new ListNode2(3);
+        ListNode2 listNode3 = new ListNode2(2);
         listNode1.next = listNode2;
         listNode2.next = listNode3;
 
-        ListNode listNode = l24_230128.reverseList(listNode1);
+        ListNode2 listNode = l24_230128.reverseList(listNode1);
 
         // test
         l06_230127 l06_230127 = new l06_230127();
@@ -144,15 +147,15 @@ public class JUnit5TestClass {
      */
     @Test
     public void listNodeEqualsTest() {
-        ListNode listNode1 = new ListNode(1);
-        ListNode listNode2 = new ListNode(3);
-        ListNode listNode3 = new ListNode(2);
+        ListNode2 listNode1 = new ListNode2(1);
+        ListNode2 listNode2 = new ListNode2(3);
+        ListNode2 listNode3 = new ListNode2(2);
         listNode1.next = listNode2;
         listNode2.next = listNode3;
 
-        ListNode listNode4 = new ListNode(1);
-        ListNode listNode5 = new ListNode(3);
-        ListNode listNode6 = new ListNode(2);
+        ListNode2 listNode4 = new ListNode2(1);
+        ListNode2 listNode5 = new ListNode2(3);
+        ListNode2 listNode6 = new ListNode2(2);
 //        ListNode listNode7 = new ListNode(0);
         listNode4.next = listNode5;
         listNode5.next = listNode6;
@@ -480,10 +483,10 @@ public class JUnit5TestClass {
      */
     @Test
     public void l18(){
-        ListNode listNode1 = new ListNode(4);
-        ListNode listNode2 = new ListNode(5);
-        ListNode listNode3 = new ListNode(1);
-        ListNode listNode4 = new ListNode(9);
+        ListNode2 listNode1 = new ListNode2(4);
+        ListNode2 listNode2 = new ListNode2(5);
+        ListNode2 listNode3 = new ListNode2(1);
+        ListNode2 listNode4 = new ListNode2(9);
 
         listNode1.next = listNode2;
         listNode2.next = listNode3;
@@ -503,11 +506,11 @@ public class JUnit5TestClass {
     @Test
     public void l22(){
 
-        ListNode listNode1 = new ListNode(1);
-        ListNode listNode2 = new ListNode(2);
-        ListNode listNode3 = new ListNode(3);
-        ListNode listNode4 = new ListNode(4);
-        ListNode listNode5 = new ListNode(5);
+        ListNode2 listNode1 = new ListNode2(1);
+        ListNode2 listNode2 = new ListNode2(2);
+        ListNode2 listNode3 = new ListNode2(3);
+        ListNode2 listNode4 = new ListNode2(4);
+        ListNode2 listNode5 = new ListNode2(5);
 
         listNode1.next = listNode2;
         listNode2.next = listNode3;
@@ -528,12 +531,12 @@ public class JUnit5TestClass {
     @Test
     public void l25(){
 
-        ListNode listNode1 = new ListNode(1);
-        ListNode listNode2 = new ListNode(2);
-        ListNode listNode3 = new ListNode(4);
-        ListNode listNode4 = new ListNode(1);
-        ListNode listNode5 = new ListNode(3);
-        ListNode listNode6 = new ListNode(4);
+        ListNode2 listNode1 = new ListNode2(1);
+        ListNode2 listNode2 = new ListNode2(2);
+        ListNode2 listNode3 = new ListNode2(4);
+        ListNode2 listNode4 = new ListNode2(1);
+        ListNode2 listNode5 = new ListNode2(3);
+        ListNode2 listNode6 = new ListNode2(4);
 
         listNode1.next = listNode2;
         listNode2.next = listNode3;
@@ -550,6 +553,41 @@ public class JUnit5TestClass {
         l25_answer l25Answer = new l25_answer();
         System.out.println(l25Answer.mergeTwoLists(listNode1, listNode4));
     }
+
+    /**
+     * 剑指 Offer 52. 两个链表的第一个公共节点
+     * <a href="https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/">l52</a>
+     */
+    @Test
+    public void l52(){
+        ListNode listNode1 = new ListNode(4);
+        ListNode listNode2 = new ListNode(1);
+        ListNode listNode3 = new ListNode(5);
+        ListNode listNode4 = new ListNode(0);
+        ListNode listNode5 = new ListNode(1);
+        ListNode listNode6 = new ListNode(8);
+        ListNode listNode7 = new ListNode(4);
+        ListNode listNode8 = new ListNode(5);
+
+        listNode1.next = listNode2;
+
+        listNode3.next = listNode4;
+        listNode4.next = listNode5;
+        
+        listNode6.next = listNode7;
+        listNode7.next = listNode8;
+
+        listNode2.next = listNode6;
+        listNode5.next = listNode6;
+
+        l52_230206 l52230206 = new l52_230206();
+        System.out.println(l52230206.getIntersectionNode(listNode1, listNode3));
+
+        l52_answer l52_answer = new l52_answer();
+        System.out.println(l52_answer.getIntersectionNode(listNode1, listNode3));
+    }
+
+
 }
 
 
