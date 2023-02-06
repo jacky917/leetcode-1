@@ -12,6 +12,8 @@ import l10_02.l10_02_230203;
 import l11.l11_230131;
 import l18.l18_230205;
 import l18.l18_answer;
+import l21.l21_230206;
+import l21.l21_answer;
 import l22.l22_230206;
 import l22.l22_answer;
 import l24.l24_230128;
@@ -587,7 +589,18 @@ public class JUnit5TestClass {
         System.out.println(l52_answer.getIntersectionNode(listNode1, listNode3));
     }
 
+    /**
+     * 剑指 Offer 21. 调整数组顺序使奇数位于偶数前面
+     * <a href="https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/">l21</a>
+     */
+    @Test
+    public void l21(){
+        l21_230206 l24230206 = new l21_230206();
+        System.out.println(Arrays.toString(l24230206.exchange(new int[]{1, 3, 5})));
 
+        l21_answer l21Answer = new l21_answer();
+        System.out.println(Arrays.toString(l21Answer.exchange(new int[]{1, 3, 5})));
+    }
 }
 
 
