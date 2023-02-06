@@ -14,6 +14,8 @@ import l18.l18_answer;
 import l22.l22_230206;
 import l22.l22_answer;
 import l24.l24_230128;
+import l25.l25_230206;
+import l25.l25_answer;
 import l26.l26_230202;
 import l27.l27_230202;
 import l28.l28_230202;
@@ -517,6 +519,36 @@ public class JUnit5TestClass {
 
         l22_answer l22Answer = new l22_answer();
         System.out.println(l22Answer.getKthFromEnd(listNode1, 3));
+    }
+
+    /**
+     * 剑指 Offer 25. 合并两个排序的链表
+     * <a href="https://leetcode.cn/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/">l25</a>
+     */
+    @Test
+    public void l25(){
+
+        ListNode listNode1 = new ListNode(1);
+        ListNode listNode2 = new ListNode(2);
+        ListNode listNode3 = new ListNode(4);
+        ListNode listNode4 = new ListNode(1);
+        ListNode listNode5 = new ListNode(3);
+        ListNode listNode6 = new ListNode(4);
+
+        listNode1.next = listNode2;
+        listNode2.next = listNode3;
+        listNode4.next = listNode5;
+        listNode5.next = listNode6;
+
+        System.out.println(listNode1);
+        System.out.println(listNode4);
+        System.out.println("-----------");
+        l25_230206 l25230206 = new l25_230206();
+        // 看了解答，還可以優化，當一個鏈表為null時，可以直接將cur.next接上另一鏈表
+//        System.out.println(l25230206.mergeTwoLists(listNode1, listNode4));
+        System.out.println("-----------");
+        l25_answer l25Answer = new l25_answer();
+        System.out.println(l25Answer.mergeTwoLists(listNode1, listNode4));
     }
 }
 
