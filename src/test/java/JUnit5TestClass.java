@@ -39,7 +39,8 @@ import l52.l52_answer;
 import l53_1.l53_01_answer;
 import l53_2.l53_02_230131;
 import l57.l57_230206;
-import l58.l58_230129;
+import l58_01.l58_01_230206;
+import l58_02.l58_02_230129;
 import l63.l63_230204;
 import org.junit.Test;
 
@@ -209,12 +210,12 @@ public class JUnit5TestClass {
 
     /**
      * 剑指 Offer 58 - II. 左旋转字符串
-     * <a href="https://leetcode.cn/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/">l58</a>
+     * <a href="https://leetcode.cn/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/">l58-II</a>
      */
     @Test
-    public void l58() {
-        l58_230129 l58_230129 = new l58_230129();
-        System.out.println(l58_230129.reverseLeftWords("lrloseumgh", 6));
+    public void l58_02() {
+        l58_02_230129 l58_01_230129 = new l58_02_230129();
+        System.out.println(l58_01_230129.reverseLeftWords("lrloseumgh", 6));
     }
 
     /**
@@ -611,6 +612,17 @@ public class JUnit5TestClass {
     public void l57(){
         l57_230206 l57230206 = new l57_230206();
         System.out.println(Arrays.toString(l57230206.twoSum(new int[]{2, 7, 11, 15}, 9)));
+    }
+
+    /**
+     * 剑指 Offer 58 - I. 翻转单词顺序
+     * <a href="https://leetcode.cn/problems/fan-zhuan-dan-ci-shun-xu-lcof/">l58-I</a>
+     */
+    @Test
+    public void l58_01(){
+        l58_01_230206 l5801230206 = new l58_01_230206();
+        System.out.println(l5801230206.reverseWordsAPI("   the sky is blue"));
+        System.out.println(l5801230206.reverseWords("   the sky is blue"));
     }
 }
 

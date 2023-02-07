@@ -1,6 +1,6 @@
-package l58;
+package l58_02;
 
-public class l58_230129 {
+public class l58_02_230129 {
 
     public String reverseLeftWords(String s, int n) {
         if (n <= 0 || n >= s.length()) return s;
