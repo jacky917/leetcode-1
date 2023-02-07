@@ -10,6 +10,7 @@ import l09.l09_230127;
 import l10_01.l10_01_230203;
 import l10_02.l10_02_230203;
 import l11.l11_230131;
+import l12.l12_230207;
 import l18.l18_230205;
 import l18.l18_answer;
 import l21.l21_230206;
@@ -623,6 +624,21 @@ public class JUnit5TestClass {
         l58_01_230206 l5801230206 = new l58_01_230206();
         System.out.println(l5801230206.reverseWordsAPI("   the sky is blue"));
         System.out.println(l5801230206.reverseWords("   the sky is blue"));
+    }
+
+    /**
+     * 剑指 Offer 12. 矩阵中的路径
+     * <a href="https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/">l12</a>
+     */
+    @Test
+    public void l12(){
+        l12_230207 l12230207 = new l12_230207();
+         char[][] arr = {
+            {'A','B','C','E'},
+            {'S','F','C','S'},
+            {'A','D','E','E'},
+        };
+        System.out.println(l12230207.exist(arr,"ABCCED"));
     }
 }
 
