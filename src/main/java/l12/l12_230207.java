@@ -1,5 +1,6 @@
 package l12;
 
+// 有看解答
 public class l12_230207 {
     public boolean exist(char[][] board, String word) {
         char[] words = word.toCharArray();
