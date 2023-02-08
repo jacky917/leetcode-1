@@ -31,6 +31,7 @@ import l32_02.l32_02_230201;
 import l32_03.l32_03_230202;
 import l34.l34_230208;
 import l35.l35_230129;
+import l36.l36_230208;
 import l42.l42_answer;
 import l46.l46_230205;
 import l47.l47_230204;
@@ -690,6 +691,27 @@ public class JUnit5TestClass {
         for(List<Integer> l : l34230208.pathSum(treeNode1, 22)){
             System.out.println(l);
         }
+    }
+
+    /**
+     * 剑指 Offer 36. 二叉搜索树与双向链表
+     * <a href="https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/">l36</a>
+     */
+    @Test
+    public void l36(){
+        TreeNode treeNode1 = new TreeNode(4);
+        TreeNode treeNode2 = new TreeNode(2);
+        TreeNode treeNode3 = new TreeNode(5);
+        TreeNode treeNode4 = new TreeNode(1);
+        TreeNode treeNode5 = new TreeNode(3);
+
+        treeNode1.left = treeNode2;
+        treeNode2.left = treeNode4;
+        treeNode2.right = treeNode5;
+        treeNode1.right = treeNode3;
+
+        l36_230208 l36230208 = new l36_230208();
+        l36230208.treeToDoublyList(treeNode1);
     }
 }
 
