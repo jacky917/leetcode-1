@@ -29,6 +29,7 @@ import l30.l30_answer;
 import l32_01.l32_01_230201;
 import l32_02.l32_02_230201;
 import l32_03.l32_03_230202;
+import l34.l34_230208;
 import l35.l35_230129;
 import l42.l42_answer;
 import l46.l46_230205;
@@ -46,7 +47,9 @@ import l63.l63_230204;
 import m13.m13_230208;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class JUnit5TestClass {
 
@@ -658,7 +661,35 @@ public class JUnit5TestClass {
      */
     @Test
     public void l34(){
+        TreeNode treeNode1 = new TreeNode(5);
+        TreeNode treeNode2 = new TreeNode(4);
+        TreeNode treeNode3 = new TreeNode(8);
+        TreeNode treeNode4 = new TreeNode(11);
+        TreeNode treeNode5 = new TreeNode(13);
+        TreeNode treeNode6 = new TreeNode(4);
+        TreeNode treeNode7 = new TreeNode(7);
+        TreeNode treeNode8 = new TreeNode(2);
+        TreeNode treeNode9 = new TreeNode(5);
+        TreeNode treeNode10 = new TreeNode(1);
 
+        treeNode1.left = treeNode2;
+        treeNode1.right = treeNode3;
+        treeNode2.left = treeNode4;
+        treeNode3.left = treeNode5;
+        treeNode3.right = treeNode6;
+        treeNode4.left = treeNode7;
+        treeNode4.right = treeNode8;
+        treeNode6.left = treeNode9;
+        treeNode6.right = treeNode10;
+
+//        TreeNode treeNode1 = new TreeNode(-2);
+//        TreeNode treeNode2 = new TreeNode(-3);
+//        treeNode1.right = treeNode2;
+
+        l34_230208 l34230208 = new l34_230208();
+        for(List<Integer> l : l34230208.pathSum(treeNode1, 22)){
+            System.out.println(l);
+        }
     }
 }
 
