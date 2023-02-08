@@ -1,12 +1,12 @@
 package l25;
 
-import entity.ListNode2;
+import entity.ListNodeA;
 
 public class l25_230206 {
-    public ListNode2 mergeTwoLists(ListNode2 l1, ListNode2 l2) {
+    public ListNodeA mergeTwoLists(ListNodeA l1, ListNodeA l2) {
         // 頭節點
-        ListNode2 head = new ListNode2(0);
-        ListNode2 cur = head;
+        ListNodeA head = new ListNodeA(0);
+        ListNodeA cur = head;
         while (!(l1 == null && l2 == null)) {
             if (l1 == null) {
                 cur.next = l2;

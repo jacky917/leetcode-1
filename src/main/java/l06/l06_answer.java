@@ -1,6 +1,6 @@
 package l06;
 
-import entity.ListNode2;
+import entity.ListNodeA;
 
 import java.util.ArrayList;
 
@@ -8,14 +8,14 @@ public class l06_answer {
 
     // 遞歸法
     ArrayList<Integer> tmp = new ArrayList<Integer>();
-    public int[] reversePrint(ListNode2 head) {
+    public int[] reversePrint(ListNodeA head) {
         recur(head);
         int[] res = new int[tmp.size()];
         for(int i = 0; i < res.length; i++)
             res[i] = tmp.get(i);
         return res;
     }
-    void recur(ListNode2 head) {
+    void recur(ListNodeA head) {
         if(head == null) return;
         recur(head.next);
         tmp.add(head.val);

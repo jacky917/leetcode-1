@@ -2,17 +2,17 @@ package entity;
 
 import java.util.Objects;
 
-public class ListNode2 {
+public class ListNodeA {
 
-    public ListNode2(int x) { val = x; }
+    public ListNodeA(int x) { val = x; }
     public int val;
-    public ListNode2 next;
+    public ListNodeA next;
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof ListNode2)) return false;
-        ListNode2 that = (ListNode2) o;
+        if (!(o instanceof ListNodeA)) return false;
+        ListNodeA that = (ListNodeA) o;
         // 下一節點都為空，當前值相等 返回true
         if (this.next == null && that.next == null && this.val == that.val) return true;
         // 其中一個為空，另一個有值 返回false

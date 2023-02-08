@@ -1,5 +1,5 @@
 import entity.ListNode;
-import entity.ListNode2;
+import entity.ListNodeA;
 import entity.RandomNode;
 import entity.TreeNode;
 import l03.l03_answer;
@@ -43,6 +43,7 @@ import l57.l57_230206;
 import l58_01.l58_01_230206;
 import l58_02.l58_02_230129;
 import l63.l63_230204;
+import m13.m13_230208;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -116,9 +117,9 @@ public class JUnit5TestClass {
     public void l06() {
         l06_230127 l06_230127 = new l06_230127();
         // 1 --> 3 --> 2
-        ListNode2 listNode1 = new ListNode2(1);
-        ListNode2 listNode2 = new ListNode2(3);
-        ListNode2 listNode3 = new ListNode2(2);
+        ListNodeA listNode1 = new ListNodeA(1);
+        ListNodeA listNode2 = new ListNodeA(3);
+        ListNodeA listNode3 = new ListNodeA(2);
         listNode1.next = listNode2;
         listNode2.next = listNode3;
 
@@ -134,13 +135,13 @@ public class JUnit5TestClass {
     public void l24() {
         l24_230128 l24_230128 = new l24_230128();
         // 1 --> 3 --> 2
-        ListNode2 listNode1 = new ListNode2(1);
-        ListNode2 listNode2 = new ListNode2(3);
-        ListNode2 listNode3 = new ListNode2(2);
+        ListNodeA listNode1 = new ListNodeA(1);
+        ListNodeA listNode2 = new ListNodeA(3);
+        ListNodeA listNode3 = new ListNodeA(2);
         listNode1.next = listNode2;
         listNode2.next = listNode3;
 
-        ListNode2 listNode = l24_230128.reverseList(listNode1);
+        ListNodeA listNode = l24_230128.reverseList(listNode1);
 
         // test
         l06_230127 l06_230127 = new l06_230127();
@@ -152,15 +153,15 @@ public class JUnit5TestClass {
      */
     @Test
     public void listNodeEqualsTest() {
-        ListNode2 listNode1 = new ListNode2(1);
-        ListNode2 listNode2 = new ListNode2(3);
-        ListNode2 listNode3 = new ListNode2(2);
+        ListNodeA listNode1 = new ListNodeA(1);
+        ListNodeA listNode2 = new ListNodeA(3);
+        ListNodeA listNode3 = new ListNodeA(2);
         listNode1.next = listNode2;
         listNode2.next = listNode3;
 
-        ListNode2 listNode4 = new ListNode2(1);
-        ListNode2 listNode5 = new ListNode2(3);
-        ListNode2 listNode6 = new ListNode2(2);
+        ListNodeA listNode4 = new ListNodeA(1);
+        ListNodeA listNode5 = new ListNodeA(3);
+        ListNodeA listNode6 = new ListNodeA(2);
 //        ListNode listNode7 = new ListNode(0);
         listNode4.next = listNode5;
         listNode5.next = listNode6;
@@ -488,10 +489,10 @@ public class JUnit5TestClass {
      */
     @Test
     public void l18(){
-        ListNode2 listNode1 = new ListNode2(4);
-        ListNode2 listNode2 = new ListNode2(5);
-        ListNode2 listNode3 = new ListNode2(1);
-        ListNode2 listNode4 = new ListNode2(9);
+        ListNodeA listNode1 = new ListNodeA(4);
+        ListNodeA listNode2 = new ListNodeA(5);
+        ListNodeA listNode3 = new ListNodeA(1);
+        ListNodeA listNode4 = new ListNodeA(9);
 
         listNode1.next = listNode2;
         listNode2.next = listNode3;
@@ -511,11 +512,11 @@ public class JUnit5TestClass {
     @Test
     public void l22(){
 
-        ListNode2 listNode1 = new ListNode2(1);
-        ListNode2 listNode2 = new ListNode2(2);
-        ListNode2 listNode3 = new ListNode2(3);
-        ListNode2 listNode4 = new ListNode2(4);
-        ListNode2 listNode5 = new ListNode2(5);
+        ListNodeA listNode1 = new ListNodeA(1);
+        ListNodeA listNode2 = new ListNodeA(2);
+        ListNodeA listNode3 = new ListNodeA(3);
+        ListNodeA listNode4 = new ListNodeA(4);
+        ListNodeA listNode5 = new ListNodeA(5);
 
         listNode1.next = listNode2;
         listNode2.next = listNode3;
@@ -536,12 +537,12 @@ public class JUnit5TestClass {
     @Test
     public void l25(){
 
-        ListNode2 listNode1 = new ListNode2(1);
-        ListNode2 listNode2 = new ListNode2(2);
-        ListNode2 listNode3 = new ListNode2(4);
-        ListNode2 listNode4 = new ListNode2(1);
-        ListNode2 listNode5 = new ListNode2(3);
-        ListNode2 listNode6 = new ListNode2(4);
+        ListNodeA listNode1 = new ListNodeA(1);
+        ListNodeA listNode2 = new ListNodeA(2);
+        ListNodeA listNode3 = new ListNodeA(4);
+        ListNodeA listNode4 = new ListNodeA(1);
+        ListNodeA listNode5 = new ListNodeA(3);
+        ListNodeA listNode6 = new ListNodeA(4);
 
         listNode1.next = listNode2;
         listNode2.next = listNode3;
@@ -639,6 +640,25 @@ public class JUnit5TestClass {
             {'A','D','E','E'},
         };
         System.out.println(l12230207.exist(arr,"ABCCED"));
+    }
+
+    /**
+     * 面试题13. 机器人的运动范围
+     * <a href="https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/">m13</a>
+     */
+    @Test
+    public void m13(){
+        m13_230208 m13230208 = new m13_230208();
+        System.out.println(m13230208.movingCount(2,3,1));
+    }
+
+    /**
+     * 剑指 Offer 34. 二叉树中和为某一值的路径
+     * <a href="https://leetcode.cn/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/">l34</a>
+     */
+    @Test
+    public void l34(){
+
     }
 }
 

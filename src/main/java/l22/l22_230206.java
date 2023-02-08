@@ -1,12 +1,12 @@
 package l22;
 
-import entity.ListNode2;
+import entity.ListNodeA;
 
 // 遞歸
 public class l22_230206 {
-    ListNode2 result = null;
+    ListNodeA result = null;
     int c = 0;
-    public ListNode2 getKthFromEnd(ListNode2 head, int k) {
+    public ListNodeA getKthFromEnd(ListNodeA head, int k) {
         if (head == null) return null;
         getKthFromEnd(head.next, k);
         c ++;

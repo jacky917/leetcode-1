@@ -1,11 +1,11 @@
 package l22;
 
-import entity.ListNode2;
+import entity.ListNodeA;
 
 // 雙指針
 public class l22_answer {
-    public ListNode2 getKthFromEnd(ListNode2 head, int k) {
-        ListNode2 former = head, latter = head;
+    public ListNodeA getKthFromEnd(ListNodeA head, int k) {
+        ListNodeA former = head, latter = head;
         for(int i = 0; i < k; i++) {
             if(former == null) return null;
             former = former.next;

@@ -1,13 +1,13 @@
 package l18;
 
-import entity.ListNode2;
+import entity.ListNodeA;
 
 public class l18_answer {
-    public ListNode2 deleteNode(ListNode2 head, int val) {
+    public ListNodeA deleteNode(ListNodeA head, int val) {
         if (head == null) return null;
         // 頭節點就是目標,返回next
         if (head.val == val) return head.next;
-        ListNode2 pre = head, cur = head.next;
+        ListNodeA pre = head, cur = head.next;
         while (cur != null && cur.val != val) {
             pre = cur;
             cur = cur.next;

@@ -1,11 +1,11 @@
 package l25;
 
-import entity.ListNode2;
+import entity.ListNodeA;
 
 public class l25_answer {
 
-    public ListNode2 mergeTwoLists(ListNode2 l1, ListNode2 l2) {
-        ListNode2 dum = new ListNode2(0), cur = dum;
+    public ListNodeA mergeTwoLists(ListNodeA l1, ListNodeA l2) {
+        ListNodeA dum = new ListNodeA(0), cur = dum;
         while(l1 != null && l2 != null) {
             if(l1.val < l2.val) {
                 cur.next = l1;
