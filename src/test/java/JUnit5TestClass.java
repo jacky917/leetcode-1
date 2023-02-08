@@ -41,6 +41,7 @@ import l52.l52_230206;
 import l52.l52_answer;
 import l53_1.l53_01_answer;
 import l53_2.l53_02_230131;
+import l54.l54_230208;
 import l57.l57_230206;
 import l58_01.l58_01_230206;
 import l58_02.l58_02_230129;
@@ -50,6 +51,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 public class JUnit5TestClass {
@@ -712,6 +714,34 @@ public class JUnit5TestClass {
 
         l36_230208 l36230208 = new l36_230208();
         l36230208.treeToDoublyList(treeNode1);
+    }
+
+    @Test
+    public void l54(){
+//        TreeNode treeNode1 = new TreeNode(3);
+//        TreeNode treeNode2 = new TreeNode(1);
+//        TreeNode treeNode3 = new TreeNode(4);
+//        TreeNode treeNode4 = new TreeNode(2);
+//
+//        treeNode1.left = treeNode2;
+//        treeNode1.right = treeNode3;
+//        treeNode2.right = treeNode4;
+
+        TreeNode treeNode1 = new TreeNode(5);
+        TreeNode treeNode2 = new TreeNode(3);
+        TreeNode treeNode3 = new TreeNode(6);
+        TreeNode treeNode4 = new TreeNode(2);
+        TreeNode treeNode5 = new TreeNode(4);
+        TreeNode treeNode6 = new TreeNode(1);
+
+        treeNode1.left = treeNode2;
+        treeNode1.right = treeNode3;
+        treeNode2.left = treeNode4;
+        treeNode2.right = treeNode5;
+        treeNode4.left = treeNode6;
+
+        l54_230208 l54230208 = new l54_230208();
+        System.out.println(l54230208.kthLargest(treeNode1, 3));;
     }
 }
 
