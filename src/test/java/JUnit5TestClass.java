@@ -2,57 +2,57 @@ import entity.ListNode;
 import entity.ListNodeA;
 import entity.RandomNode;
 import entity.TreeNode;
-import l03.l03_answer;
-import l04.l04_230201;
-import l05.l05_230129;
-import l06.l06_230127;
-import l09.l09_230127;
-import l10_01.l10_01_230203;
-import l10_02.l10_02_230203;
-import l11.l11_230131;
-import l12.l12_230207;
-import l18.l18_230205;
-import l18.l18_answer;
-import l21.l21_230206;
-import l21.l21_answer;
-import l22.l22_230206;
-import l22.l22_answer;
-import l24.l24_230128;
-import l25.l25_230206;
-import l25.l25_answer;
-import l26.l26_230202;
-import l27.l27_230202;
-import l28.l28_230202;
-import l28.l28_answer;
-import l30.l30_230127;
-import l30.l30_answer;
-import l32_01.l32_01_230201;
-import l32_02.l32_02_230201;
-import l32_03.l32_03_230202;
-import l34.l34_230208;
-import l35.l35_230129;
-import l36.l36_230208;
-import l42.l42_answer;
-import l46.l46_230205;
-import l47.l47_230204;
-import l48.l48_230205;
-import l50.l50_230131;
-import l52.l52_230206;
-import l52.l52_answer;
-import l53_1.l53_01_answer;
-import l53_2.l53_02_230131;
-import l54.l54_230208;
-import l57.l57_230206;
-import l58_01.l58_01_230206;
-import l58_02.l58_02_230129;
-import l63.l63_230204;
-import m13.m13_230208;
+import questions.l03.l03_answer;
+import questions.l04.l04_230201;
+import questions.l05.l05_230129;
+import questions.l06.l06_230127;
+import questions.l09.l09_230127;
+import questions.l09.l09_230211;
+import questions.l10_01.l10_01_230203;
+import questions.l10_02.l10_02_230203;
+import questions.l11.l11_230131;
+import questions.l12.l12_230207;
+import questions.l18.l18_230205;
+import questions.l18.l18_answer;
+import questions.l21.l21_230206;
+import questions.l21.l21_answer;
+import questions.l22.l22_230206;
+import questions.l22.l22_answer;
+import questions.l24.l24_230128;
+import questions.l25.l25_230206;
+import questions.l25.l25_answer;
+import questions.l26.l26_230202;
+import questions.l27.l27_230202;
+import questions.l28.l28_230202;
+import questions.l28.l28_answer;
+import questions.l30.l30_230127;
+import questions.l30.l30_answer;
+import questions.l32_01.l32_01_230201;
+import questions.l32_02.l32_02_230201;
+import questions.l32_03.l32_03_230202;
+import questions.l34.l34_230208;
+import questions.l35.l35_230129;
+import questions.l35.l35_230211;
+import questions.l36.l36_230208;
+import questions.l42.l42_answer;
+import questions.l46.l46_230205;
+import questions.l47.l47_230204;
+import questions.l48.l48_230205;
+import questions.l50.l50_230131;
+import questions.l52.l52_230206;
+import questions.l52.l52_answer;
+import questions.l53_1.l53_01_answer;
+import questions.l53_2.l53_02_230131;
+import questions.l54.l54_230208;
+import questions.l57.l57_230206;
+import questions.l58_01.l58_01_230206;
+import questions.l58_02.l58_02_230129;
+import questions.l63.l63_230204;
+import questions.m13.m13_230208;
+import questions.m45.m45_230209;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class JUnit5TestClass {
 
@@ -62,16 +62,14 @@ public class JUnit5TestClass {
      */
     @Test
     public void l09() {
-        l09_230127 l09_230127 = new l09_230127();
-        System.out.println("deleteHead : " + l09_230127.deleteHead());
-        l09_230127.appendTail(1);
-        l09_230127.appendTail(2);
-        l09_230127.appendTail(3);
-        l09_230127.appendTail(4);
-        l09_230127.print();
-        System.out.println("deleteHead : " + l09_230127.deleteHead());
-        System.out.println("deleteHead : " + l09_230127.deleteHead());
-        l09_230127.print();
+        l09_230211 test = new l09_230211();
+        System.out.println("deleteHead : " + test.deleteHead());
+        test.appendTail(1);
+        test.appendTail(2);
+        test.appendTail(3);
+        test.appendTail(4);
+        System.out.println("deleteHead : " + test.deleteHead());
+        System.out.println("deleteHead : " + test.deleteHead());
     }
 
     /**
@@ -182,7 +180,7 @@ public class JUnit5TestClass {
      */
     @Test
     public void l35() {
-        l35_230129 l35_230129 = new l35_230129();
+        l35_230211 test = new l35_230211();
         RandomNode randomNode1 = new RandomNode(7);
         RandomNode randomNode2 = new RandomNode(13);
         RandomNode randomNode3 = new RandomNode(11);
@@ -202,7 +200,7 @@ public class JUnit5TestClass {
         randomNode4.random = randomNode3;
         randomNode5.random = randomNode1;
 
-        RandomNode copy = l35_230129.copyRandomList(randomNode1);
+        RandomNode copy = test.copyRandomListSplit(randomNode1);
         System.out.println(copy + ", " + randomNode1);
     }
 
@@ -288,9 +286,9 @@ public class JUnit5TestClass {
     public void l04() {
 //        l04_230131 l04_230131 = new l04_230131();
         int[][] arr = {
-                {1,   4,  7, 11, 15},
-                {2,   5,  8, 12, 19},
-                {3,   6,  9, 16, 22},
+                {1, 4, 7, 11, 15},
+                {2, 5, 8, 12, 19},
+                {3, 6, 9, 16, 22},
                 {10, 13, 14, 17, 24},
                 {18, 21, 23, 26, 30}
         };
@@ -303,7 +301,7 @@ public class JUnit5TestClass {
 //        };
 //        System.out.println(l04_230131.findNumberIn2DArray(arr, 6));
         l04_230201 l04_230201 = new l04_230201();
-        System.out.println(l04_230201.findNumberIn2DArray(arr,20));
+        System.out.println(l04_230201.findNumberIn2DArray(arr, 20));
     }
 
     /**
@@ -313,7 +311,7 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/">l32-III</a>
      */
     @Test
-    public void l32(){
+    public void l32() {
 
         TreeNode treeNode1 = new TreeNode(3);
         TreeNode treeNode2 = new TreeNode(9);
@@ -344,7 +342,7 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/">l26</a>
      */
     @Test
-    public void l26(){
+    public void l26() {
         l26_230202 l26_230202 = new l26_230202();
 
         TreeNode treeANode1 = new TreeNode(3);
@@ -363,7 +361,7 @@ public class JUnit5TestClass {
 
         treeBNode1.left = treeBNode2;
 
-        System.out.println(l26_230202.isSubStructure(treeANode1,treeBNode1));
+        System.out.println(l26_230202.isSubStructure(treeANode1, treeBNode1));
     }
 
     /**
@@ -371,7 +369,7 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/er-cha-shu-de-jing-xiang-lcof/">l27</a>
      */
     @Test
-    public void l27(){
+    public void l27() {
         TreeNode treeANode1 = new TreeNode(4);
         TreeNode treeANode2 = new TreeNode(2);
         TreeNode treeANode3 = new TreeNode(7);
@@ -396,7 +394,7 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/dui-cheng-de-er-cha-shu-lcof/">l28</a>
      */
     @Test
-    public void l28(){
+    public void l28() {
 
         TreeNode treeANode1 = new TreeNode(1);
         TreeNode treeANode2 = new TreeNode(2);
@@ -428,7 +426,7 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/">l10-II</a>
      */
     @Test
-    public void l10(){
+    public void l10() {
         l10_01_230203 l10_01_230203 = new l10_01_230203();
         System.out.println(l10_01_230203.fibRecur(50));
         System.out.println(l10_01_230203.fibDynamic(50));
@@ -442,9 +440,9 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/gu-piao-de-zui-da-li-run-lcof/">l63</a>
      */
     @Test
-    public void l63(){
+    public void l63() {
         l63_230204 l63_230204 = new l63_230204();
-        System.out.println(l63_230204.maxProfit(new int[]{7,1,5,3,6,4}));
+        System.out.println(l63_230204.maxProfit(new int[]{7, 1, 5, 3, 6, 4}));
     }
 
     /**
@@ -452,10 +450,10 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/">l42</a>
      */
     @Test
-    public void l42(){
+    public void l42() {
         l42_answer l42_answer = new l42_answer();
-        System.out.println(l42_answer.maxSubArray1(new int[]{999,-9999,50}));
-        System.out.println(l42_answer.maxSubArray2(new int[]{999,-9999,50}));
+        System.out.println(l42_answer.maxSubArray1(new int[]{999, -9999, 50}));
+        System.out.println(l42_answer.maxSubArray2(new int[]{999, -9999, 50}));
     }
 
     /**
@@ -463,10 +461,10 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/">l47</a>
      */
     @Test
-    public void l47(){
+    public void l47() {
 //        當前 + Math.max(右邊，下邊)
         l47_230204 l47_230204 = new l47_230204();
-        System.out.println(l47_230204.maxValue(new int[][]{{1,3,1},{1,5,1},{4,2,1}}));
+        System.out.println(l47_230204.maxValue(new int[][]{{1, 3, 1}, {1, 5, 1}, {4, 2, 1}}));
     }
 
     /**
@@ -474,7 +472,7 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/">l46</a>
      */
     @Test
-    public void l46(){
+    public void l46() {
         l46_230205 l46_230205 = new l46_230205();
         System.out.println(l46_230205.translateNum(25));
     }
@@ -484,7 +482,7 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/">l48</a>
      */
     @Test
-    public void l48(){
+    public void l48() {
         l48_230205 l48230205 = new l48_230205();
         System.out.println(l48230205.lengthOfLongestSubstring("pwwkew"));
     }
@@ -494,7 +492,7 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/shan-chu-lian-biao-de-jie-dian-lcof/">l18</a>
      */
     @Test
-    public void l18(){
+    public void l18() {
         ListNodeA listNode1 = new ListNodeA(4);
         ListNodeA listNode2 = new ListNodeA(5);
         ListNodeA listNode3 = new ListNodeA(1);
@@ -516,7 +514,7 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/">l22</a>
      */
     @Test
-    public void l22(){
+    public void l22() {
 
         ListNodeA listNode1 = new ListNodeA(1);
         ListNodeA listNode2 = new ListNodeA(2);
@@ -541,7 +539,7 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/">l25</a>
      */
     @Test
-    public void l25(){
+    public void l25() {
 
         ListNodeA listNode1 = new ListNodeA(1);
         ListNodeA listNode2 = new ListNodeA(2);
@@ -571,7 +569,7 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/">l52</a>
      */
     @Test
-    public void l52(){
+    public void l52() {
         ListNode listNode1 = new ListNode(4);
         ListNode listNode2 = new ListNode(1);
         ListNode listNode3 = new ListNode(5);
@@ -585,7 +583,7 @@ public class JUnit5TestClass {
 
         listNode3.next = listNode4;
         listNode4.next = listNode5;
-        
+
         listNode6.next = listNode7;
         listNode7.next = listNode8;
 
@@ -604,12 +602,12 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/">l21</a>
      */
     @Test
-    public void l21(){
+    public void l21() {
         l21_230206 l24230206 = new l21_230206();
         System.out.println(Arrays.toString(l24230206.exchange(new int[]{1, 3, 5})));
 
         l21_answer l21Answer = new l21_answer();
-        System.out.println(Arrays.toString(l21Answer.exchange(new int[]{1, 3, 5})));
+        System.out.println(Arrays.toString(l21Answer.exchange(new int[]{2, 5})));
     }
 
     /**
@@ -617,7 +615,7 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/">l57</a>
      */
     @Test
-    public void l57(){
+    public void l57() {
         l57_230206 l57230206 = new l57_230206();
         System.out.println(Arrays.toString(l57230206.twoSum(new int[]{2, 7, 11, 15}, 9)));
     }
@@ -627,7 +625,7 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/fan-zhuan-dan-ci-shun-xu-lcof/">l58-I</a>
      */
     @Test
-    public void l58_01(){
+    public void l58_01() {
         l58_01_230206 l5801230206 = new l58_01_230206();
         System.out.println(l5801230206.reverseWordsAPI("   the sky is blue"));
         System.out.println(l5801230206.reverseWords("   the sky is blue"));
@@ -638,14 +636,14 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/">l12</a>
      */
     @Test
-    public void l12(){
+    public void l12() {
         l12_230207 l12230207 = new l12_230207();
-         char[][] arr = {
-            {'A','B','C','E'},
-            {'S','F','C','S'},
-            {'A','D','E','E'},
+        char[][] arr = {
+                {'A', 'B', 'C', 'E'},
+                {'S', 'F', 'C', 'S'},
+                {'A', 'D', 'E', 'E'},
         };
-        System.out.println(l12230207.exist(arr,"ABCCED"));
+        System.out.println(l12230207.exist(arr, "ABCCED"));
     }
 
     /**
@@ -653,9 +651,9 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/">m13</a>
      */
     @Test
-    public void m13(){
+    public void m13() {
         m13_230208 m13230208 = new m13_230208();
-        System.out.println(m13230208.movingCount(2,3,1));
+        System.out.println(m13230208.movingCount(2, 3, 1));
     }
 
     /**
@@ -663,7 +661,7 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/">l34</a>
      */
     @Test
-    public void l34(){
+    public void l34() {
         TreeNode treeNode1 = new TreeNode(5);
         TreeNode treeNode2 = new TreeNode(4);
         TreeNode treeNode3 = new TreeNode(8);
@@ -690,7 +688,7 @@ public class JUnit5TestClass {
 //        treeNode1.right = treeNode2;
 
         l34_230208 l34230208 = new l34_230208();
-        for(List<Integer> l : l34230208.pathSum(treeNode1, 22)){
+        for (List<Integer> l : l34230208.pathSum(treeNode1, 22)) {
             System.out.println(l);
         }
     }
@@ -700,7 +698,7 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/">l36</a>
      */
     @Test
-    public void l36(){
+    public void l36() {
         TreeNode treeNode1 = new TreeNode(4);
         TreeNode treeNode2 = new TreeNode(2);
         TreeNode treeNode3 = new TreeNode(5);
@@ -716,8 +714,12 @@ public class JUnit5TestClass {
         l36230208.treeToDoublyList(treeNode1);
     }
 
+    /**
+     * 剑指 Offer 54. 二叉搜索树的第k大节点
+     * <a href="https://leetcode.cn/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/">l54</a>
+     */
     @Test
-    public void l54(){
+    public void l54() {
 //        TreeNode treeNode1 = new TreeNode(3);
 //        TreeNode treeNode2 = new TreeNode(1);
 //        TreeNode treeNode3 = new TreeNode(4);
@@ -741,7 +743,24 @@ public class JUnit5TestClass {
         treeNode4.left = treeNode6;
 
         l54_230208 l54230208 = new l54_230208();
-        System.out.println(l54230208.kthLargest(treeNode1, 3));;
+        System.out.println(l54230208.kthLargest(treeNode1, 3));
+        ;
+    }
+
+    /**
+     * 面试题45. 把数组排成最小的数
+     * <a href="https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/">m45</a>
+     */
+    @Test
+    public void m45() {
+        m45_230209 m45230209 = new m45_230209();
+//        System.out.println(m45230209.minNumber(new int[]{10,2}));
+        char[] chars = {'5', '1', '9', '0', '2', '7'};
+        m45230209.quickSort(chars, 0, 5);
+//        System.out.println(chars);
+//        char[] chars = {'5', '1'};
+//        m45230209.quickSort(chars, 0, 1);
+        System.out.println(chars);
     }
 }
 
