@@ -2,6 +2,7 @@ import entity.ListNode;
 import entity.ListNodeA;
 import entity.RandomNode;
 import entity.TreeNode;
+import m61.m61_230212;
 import questions.l03.l03_answer;
 import questions.l04.l04_230201;
 import questions.l05.l05_230129;
@@ -754,13 +755,18 @@ public class JUnit5TestClass {
     @Test
     public void m45() {
         m45_230209 m45230209 = new m45_230209();
-//        System.out.println(m45230209.minNumber(new int[]{10,2}));
-        char[] chars = {'5', '1', '9', '0', '2', '7'};
-        m45230209.quickSort(chars, 0, 5);
-//        System.out.println(chars);
-//        char[] chars = {'5', '1'};
-//        m45230209.quickSort(chars, 0, 1);
-        System.out.println(chars);
+        int[] ints = {10,2};
+        System.out.println(m45230209.minNumber(ints));
+    }
+
+    /**
+     * 面试题61. 扑克牌中的顺子
+     * <a href="https://leetcode.cn/problems/bu-ke-pai-zhong-de-shun-zi-lcof/">l61</a>
+     */
+    @Test
+    public void m61() {
+        m61_230212 m61230212 = new m61_230212();
+        System.out.println(m61230212.isStraight(new int[]{1,2,3,4,5}));
     }
 }
 
