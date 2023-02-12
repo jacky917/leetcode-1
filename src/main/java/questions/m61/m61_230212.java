@@ -1,4 +1,4 @@
-package m61;
+package questions.m61;
 
 import java.util.HashMap;
 import java.util.HashSet;
