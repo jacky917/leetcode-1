@@ -2,6 +2,7 @@ import entity.ListNode;
 import entity.ListNodeA;
 import entity.RandomNode;
 import entity.TreeNode;
+import questions.l40.l40_230212;
 import questions.m61.m61_230212;
 import questions.l03.l03_answer;
 import questions.l04.l04_230201;
@@ -753,7 +754,7 @@ public class JUnit5TestClass {
     @Test
     public void m45() {
         m45_230209 m45230209 = new m45_230209();
-        int[] ints = {10,2};
+        int[] ints = {10, 2};
         System.out.println(m45230209.minNumber(ints));
     }
 
@@ -764,7 +765,32 @@ public class JUnit5TestClass {
     @Test
     public void m61() {
         m61_230212 m61230212 = new m61_230212();
-        System.out.println(m61230212.isStraight(new int[]{1,2,3,4,5}));
+        System.out.println(m61230212.isStraight(new int[]{1, 2, 3, 4, 5}));
+    }
+
+    @Test
+    public void l40() {
+        l40_230212 l40230212 = new l40_230212();
+        System.out.println(Arrays.toString(l40230212.getLeastNumbers1(new int[]{3,2,1}, 2)));
+    }
+
+    @Test
+    public void myTest() {
+        PriorityQueue<Integer> queue1 = new PriorityQueue<>();
+        PriorityQueue<Integer> queue2 = new PriorityQueue<>(Comparator.reverseOrder());
+        queue1.add(1);
+        queue1.add(9);
+        queue1.add(5);
+        System.out.println(queue1.poll());
+        System.out.println(queue1.poll());
+        System.out.println(queue1.poll());
+
+        queue2.add(1);
+        queue2.add(9);
+        queue2.add(5);
+        System.out.println(queue2.poll());
+        System.out.println(queue2.poll());
+        System.out.println(queue2.poll());
     }
 }
 
