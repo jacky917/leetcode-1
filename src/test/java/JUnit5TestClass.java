@@ -3,6 +3,7 @@ import entity.ListNodeA;
 import entity.RandomNode;
 import entity.TreeNode;
 import questions.l03.l03_230214;
+import questions.l04.l04_230214;
 import questions.l40.l40_230212;
 import questions.l53_1.l53_230214;
 import questions.m61.m61_230212;
@@ -298,16 +299,15 @@ public class JUnit5TestClass {
                 {10, 13, 14, 17, 24},
                 {18, 21, 23, 26, 30}
         };
-//        int[][] arr = {
-//                {5,6},
-//        };
-//        int[][] arr = {
-//                {5},
-//                {6}
-//        };
+        int[][] arr2 = {
+                {-5},
+        };
 //        System.out.println(l04_230131.findNumberIn2DArray(arr, 6));
-        l04_230201 l04_230201 = new l04_230201();
-        System.out.println(l04_230201.findNumberIn2DArray(arr, 20));
+        l04_230201 l04_230214 = new l04_230201();
+        System.out.println(l04_230214.findNumberIn2DArray(arr, 20));
+
+        questions.l04.l04_230214 test = new l04_230214();
+        System.out.println(test.findNumberIn2DArray(arr, 23));
     }
 
     /**
