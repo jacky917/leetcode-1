@@ -2,6 +2,7 @@ import entity.ListNode;
 import entity.ListNodeA;
 import entity.RandomNode;
 import entity.TreeNode;
+import questions.l03.l03_230214;
 import questions.l40.l40_230212;
 import questions.m61.m61_230212;
 import questions.l03.l03_answer;
@@ -234,6 +235,8 @@ public class JUnit5TestClass {
 //        System.out.println(l03_230129.findRepeatNumber(new int[]{2, 3, 1, 0, 2, 5, 3}));;
         l03_answer l03_answer = new l03_answer();
         System.out.println(l03_answer.findRepeatNumber(new int[]{2, 3, 1, 0, 2, 5, 3}));
+        l03_230214 l03230214 = new l03_230214();
+        System.out.println(l03230214.findRepeatNumber(new int[]{2, 3, 1, 0, 2, 5, 3}));
     }
 
     /**
@@ -771,7 +774,7 @@ public class JUnit5TestClass {
     @Test
     public void l40() {
         l40_230212 l40230212 = new l40_230212();
-        System.out.println(Arrays.toString(l40230212.getLeastNumbers1(new int[]{3,2,1}, 2)));
+        System.out.println(Arrays.toString(l40230212.getLeastNumbers1(new int[]{3, 2, 1}, 2)));
     }
 
     @Test
