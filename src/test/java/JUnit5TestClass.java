@@ -6,6 +6,7 @@ import questions.l03.l03_230214;
 import questions.l04.l04_230214;
 import questions.l40.l40_230212;
 import questions.l53_1.l53_230214;
+import questions.l55_1.l55_01_230215;
 import questions.m61.m61_230212;
 import questions.l03.l03_answer;
 import questions.l04.l04_230201;
@@ -774,6 +775,10 @@ public class JUnit5TestClass {
         System.out.println(m61230212.isStraight(new int[]{1, 2, 3, 4, 5}));
     }
 
+    /**
+     * 剑指 Offer 40. 最小的k个数
+     * <a href="https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/">l40</a>
+     */
     @Test
     public void l40() {
         l40_230212 l40230212 = new l40_230212();
@@ -781,7 +786,7 @@ public class JUnit5TestClass {
     }
 
     @Test
-    public void myTest() {
+    public void priorityQueueTest() {
         PriorityQueue<Integer> queue1 = new PriorityQueue<>();
         PriorityQueue<Integer> queue2 = new PriorityQueue<>(Comparator.reverseOrder());
         queue1.add(1);
@@ -798,6 +803,28 @@ public class JUnit5TestClass {
         System.out.println(queue2.poll());
         System.out.println(queue2.poll());
     }
+
+    /**
+     * 剑指 Offer 55 - I. 二叉树的深度
+     * <a href="https://leetcode.cn/problems/er-cha-shu-de-shen-du-lcof/">l55-I</a>
+     */
+    @Test
+    public void l55_01() {
+        TreeNode treeNode1 = new TreeNode(3);
+        TreeNode treeNode2 = new TreeNode(9);
+        TreeNode treeNode3 = new TreeNode(20);
+        TreeNode treeNode4 = new TreeNode(15);
+        TreeNode treeNode5 = new TreeNode(7);
+
+        treeNode1.left = treeNode2;
+        treeNode1.right = treeNode3;
+        treeNode3.left = treeNode4;
+        treeNode3.right = treeNode5;
+
+        l55_01_230215 l5501230215 = new l55_01_230215();
+        System.out.println(l5501230215.maxDepth(treeNode1));
+    }
+
 }
 
 
