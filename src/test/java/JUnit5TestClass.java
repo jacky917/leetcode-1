@@ -4,6 +4,7 @@ import entity.RandomNode;
 import entity.TreeNode;
 import questions.l03.l03_230214;
 import questions.l40.l40_230212;
+import questions.l53_1.l53_230214;
 import questions.m61.m61_230212;
 import questions.l03.l03_answer;
 import questions.l04.l04_230201;
@@ -249,6 +250,8 @@ public class JUnit5TestClass {
 //        System.out.println(l53_01_230129.search(new int[]{1,4},4));;
         l53_01_answer l53_01_answer = new l53_01_answer();
         System.out.println(l53_01_answer.search2(new int[]{5, 7, 7, 8, 8, 10}, 8));
+        l53_230214 l53230214 = new l53_230214();
+        System.out.println(l53230214.search(new int[]{5,7,7,8,8,10} ,8));
     }
 
     /**
