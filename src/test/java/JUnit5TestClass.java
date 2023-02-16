@@ -4,6 +4,8 @@ import entity.RandomNode;
 import entity.TreeNode;
 import questions.l03.l03_230214;
 import questions.l04.l04_230214;
+import questions.l07.l07_230216;
+import questions.l07.l07_answer;
 import questions.l40.l40_230212;
 import questions.l53_1.l53_230214;
 import questions.l55_1.l55_01_230215;
@@ -253,7 +255,7 @@ public class JUnit5TestClass {
         l53_01_answer l53_01_answer = new l53_01_answer();
         System.out.println(l53_01_answer.search2(new int[]{5, 7, 7, 8, 8, 10}, 8));
         l53_230214 l53230214 = new l53_230214();
-        System.out.println(l53230214.search(new int[]{5,7,7,8,8,10} ,8));
+        System.out.println(l53230214.search(new int[]{5, 7, 7, 8, 8, 10}, 8));
     }
 
     /**
@@ -825,6 +827,18 @@ public class JUnit5TestClass {
         System.out.println(l5501230215.maxDepth(treeNode1));
     }
 
+    /**
+     * 剑指 Offer 07. 重建二叉树
+     * <a href="https://leetcode.cn/problems/zhong-jian-er-cha-shu-lcof/">l07</a>
+     */
+    @Test
+    public void l07() {
+//        l07_230216 l07230216 = new l07_230216();
+//        TreeNode treeNode = l07230216.buildTree(new int[]{3, 9, 20, 15, 7}, new int[]{9, 3, 15, 20, 7});
+//        TreeNode treeNode = l07230216.buildTree(new int[]{1, 2}, new int[]{1, 2});
+        l07_answer l07Answer = new l07_answer();
+        l07Answer.buildTree(new int[]{3, 9, 20, 15, 7}, new int[]{9, 3, 15, 20, 7});
+    }
 }
 
 
