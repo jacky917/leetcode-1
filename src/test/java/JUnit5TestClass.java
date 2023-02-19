@@ -4,11 +4,13 @@ import entity.RandomNode;
 import entity.TreeNode;
 import questions.l03.l03_230214;
 import questions.l04.l04_230214;
-import questions.l07.l07_230216;
 import questions.l07.l07_answer;
+import questions.l11.l11_230219;
+import questions.l15.l15_230216;
 import questions.l40.l40_230212;
 import questions.l53_1.l53_230214;
 import questions.l55_1.l55_01_230215;
+import questions.l56_02.l56_02_answer;
 import questions.m61.m61_230212;
 import questions.l03.l03_answer;
 import questions.l04.l04_230201;
@@ -276,6 +278,8 @@ public class JUnit5TestClass {
     public void l11() {
         l11_230131 l11_230131 = new l11_230131();
         System.out.println(l11_230131.minArray(new int[]{3, 1, 1, 1, 1}));
+        l11_230219 l11230219 = new l11_230219();
+        System.out.println(l11230219.minArray(new int[]{3, 1, 1, 1, 1}));
     }
 
     /**
@@ -839,6 +843,28 @@ public class JUnit5TestClass {
         l07_answer l07Answer = new l07_answer();
         l07Answer.buildTree(new int[]{3, 9, 20, 15, 7}, new int[]{9, 3, 15, 20, 7});
     }
+
+    /**
+     * 剑指 Offer 15. 二进制中1的个数
+     * <a href="https://leetcode.cn/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/">l15</a>
+     */
+    @Test
+    public void l15() {
+        l15_230216 l15230216 = new l15_230216();
+        System.out.println(l15230216.hammingWeight1(429496729));
+    }
+
+    /**
+     * 剑指 Offer 56 - II. 数组中数字出现的次数 II
+     * <a href="https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/">l56</a>
+     */
+    @Test
+    public void l56_02() {
+        l56_02_answer m56Answer = new l56_02_answer();
+        System.out.println(m56Answer.singleNumber(new int[]{3,3,3,2,4,4,4,5,5,5}));
+    }
+
+
 }
 
 
