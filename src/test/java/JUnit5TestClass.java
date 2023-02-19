@@ -15,6 +15,8 @@ import questions.l50.l50_230219;
 import questions.l53_1.l53_230214;
 import questions.l55_1.l55_01_230215;
 import questions.l56_02.l56_02_answer;
+import questions.l59.l59_230219;
+import questions.l59.l59_answer;
 import questions.m61.m61_230212;
 import questions.l03.l03_answer;
 import questions.l04.l04_230201;
@@ -883,7 +885,17 @@ public class JUnit5TestClass {
         System.out.println(m56Answer.singleNumber(new int[]{3,3,3,2,4,4,4,5,5,5}));
     }
 
-
+    /**
+     * 剑指 Offer 59 - I. 滑动窗口的最大值
+     * <a href="https://leetcode.cn/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/">l59-I</a>
+     */
+    @Test
+    public void l59() {
+        l59_230219 l59230219 = new l59_230219();
+        System.out.println(Arrays.toString(l59230219.maxSlidingWindow(new int[]{1, -1}, 1)));
+        l59_answer l59Answer = new l59_answer();
+        System.out.println(Arrays.toString(l59Answer.maxSlidingWindow(new int[]{1,3,-1,-3,5,3,6,7}, 3)));
+    }
 }
 
 
