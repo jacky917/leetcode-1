@@ -7,6 +7,9 @@ import questions.l04.l04_230214;
 import questions.l07.l07_answer;
 import questions.l11.l11_230219;
 import questions.l15.l15_230216;
+import questions.l32_01.l32_01_230219;
+import questions.l32_02.l32_02_230219;
+import questions.l32_03.l32_03_230219;
 import questions.l40.l40_230212;
 import questions.l50.l50_230219;
 import questions.l53_1.l53_230214;
@@ -351,6 +354,19 @@ public class JUnit5TestClass {
         // l32 iii
         l32_03_230202 l32_03_230202 = new l32_03_230202();
         System.out.println(l32_03_230202.levelOrder(treeNode1));
+
+        System.out.println("======================================");
+        // l32 i
+        l32_01_230219 l3201230219 = new l32_01_230219();
+        System.out.println(Arrays.toString(l3201230219.levelOrder(treeNode1)));
+        System.out.println("------------------------------");
+        // l32 ii
+        l32_02_230219 l3202230219 = new l32_02_230219();
+        System.out.println(l3202230219.levelOrder(treeNode1));
+        System.out.println("------------------------------");
+        // l32 iii
+        l32_03_230219 l3203230219 = new l32_03_230219();
+        System.out.println(l3203230219.levelOrder(treeNode1));
     }
 
     /**
