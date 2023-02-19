@@ -8,6 +8,7 @@ import questions.l07.l07_answer;
 import questions.l11.l11_230219;
 import questions.l15.l15_230216;
 import questions.l40.l40_230212;
+import questions.l50.l50_230219;
 import questions.l53_1.l53_230214;
 import questions.l55_1.l55_01_230215;
 import questions.l56_02.l56_02_answer;
@@ -290,6 +291,8 @@ public class JUnit5TestClass {
     public void l50() {
         l50_230131 l50_230131 = new l50_230131();
         System.out.println(l50_230131.firstUniqChar("aba"));
+        l50_230219 l50230219 = new l50_230219();
+        System.out.println(l50230219.firstUniqChar("abaccdeff"));
     }
 
     /**
