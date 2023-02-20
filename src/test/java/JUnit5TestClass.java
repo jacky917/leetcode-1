@@ -18,6 +18,7 @@ import questions.l55_1.l55_01_230215;
 import questions.l56_02.l56_02_answer;
 import questions.l59.l59_230219;
 import questions.l59.l59_answer;
+import questions.m59_02.m59_02_230220;
 import questions.m61.m61_230212;
 import questions.l03.l03_answer;
 import questions.l04.l04_230201;
@@ -907,6 +908,25 @@ public class JUnit5TestClass {
         l29_230220 l29230220 = new l29_230220();
         System.out.println(Arrays.toString(l29230220.spiralOrder(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}})));
         System.out.println(Arrays.toString(l29230220.spiralOrder(new int[][]{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}})));
+    }
+
+    /**
+     * 面试题59 - II. 队列的最大值
+     * <a href="https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof/">m59</a>
+     */
+    @Test
+    public void m59_02() {
+        m59_02_230220 m59230220 = new m59_02_230220();
+        m59230220.push_back(1);
+        m59230220.push_back(2);
+        m59230220.push_back(99);
+        m59230220.push_back(2);
+        m59230220.push_back(56);
+        m59230220.push_back(2);
+        m59230220.push_back(100);
+        System.out.println(m59230220.max_value());
+        System.out.println(m59230220.pop_front());
+        System.out.println(m59230220.max_value());
     }
 }
 
