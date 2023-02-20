@@ -7,6 +7,7 @@ import questions.l04.l04_230214;
 import questions.l07.l07_answer;
 import questions.l11.l11_230219;
 import questions.l15.l15_230216;
+import questions.l29.l29_230220;
 import questions.l32_01.l32_01_230219;
 import questions.l32_02.l32_02_230219;
 import questions.l32_03.l32_03_230219;
@@ -882,7 +883,7 @@ public class JUnit5TestClass {
     @Test
     public void l56_02() {
         l56_02_answer m56Answer = new l56_02_answer();
-        System.out.println(m56Answer.singleNumber(new int[]{3,3,3,2,4,4,4,5,5,5}));
+        System.out.println(m56Answer.singleNumber(new int[]{3, 3, 3, 2, 4, 4, 4, 5, 5, 5}));
     }
 
     /**
@@ -890,11 +891,22 @@ public class JUnit5TestClass {
      * <a href="https://leetcode.cn/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/">l59-I</a>
      */
     @Test
-    public void l59() {
+    public void l59_01() {
         l59_230219 l59230219 = new l59_230219();
         System.out.println(Arrays.toString(l59230219.maxSlidingWindow(new int[]{1, -1}, 1)));
         l59_answer l59Answer = new l59_answer();
-        System.out.println(Arrays.toString(l59Answer.maxSlidingWindow(new int[]{1,3,-1,-3,5,3,6,7}, 3)));
+        System.out.println(Arrays.toString(l59Answer.maxSlidingWindow(new int[]{1, 3, -1, -3, 5, 3, 6, 7}, 3)));
+    }
+
+    /**
+     * 剑指 Offer 29. 顺时针打印矩阵
+     * <a href="https://leetcode.cn/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/">l29</a>
+     */
+    @Test
+    public void l29() {
+        l29_230220 l29230220 = new l29_230220();
+        System.out.println(Arrays.toString(l29230220.spiralOrder(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}})));
+        System.out.println(Arrays.toString(l29230220.spiralOrder(new int[][]{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}})));
     }
 }
 
