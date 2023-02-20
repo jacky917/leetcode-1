@@ -1,6 +1,6 @@
-package questions.l59;
+package questions.l59_01;
 
-public class l59_230219 {
+public class l59_01_230219 {
     public int[] maxSlidingWindow(int[] nums, int k) {
         if (nums.length == 0) return new int[0];
         int[] result = new int[nums.length - k + 1];

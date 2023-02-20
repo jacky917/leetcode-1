@@ -1,9 +1,9 @@
-package questions.l59;
+package questions.l59_01;
 
 import java.util.Deque;
 import java.util.LinkedList;
 
-public class l59_answer {
+public class l59_01_answer {
     public int[] maxSlidingWindow(int[] nums, int k) {
         if(nums.length == 0 || k == 0) return new int[0];
         Deque<Integer> deque = new LinkedList<>();

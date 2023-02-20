@@ -11,13 +11,14 @@ import questions.l29.l29_230220;
 import questions.l32_01.l32_01_230219;
 import questions.l32_02.l32_02_230219;
 import questions.l32_03.l32_03_230219;
+import questions.l37.l37_230220;
 import questions.l40.l40_230212;
 import questions.l50.l50_230219;
 import questions.l53_1.l53_230214;
 import questions.l55_1.l55_01_230215;
 import questions.l56_02.l56_02_answer;
-import questions.l59.l59_230219;
-import questions.l59.l59_answer;
+import questions.l59_01.l59_01_230219;
+import questions.l59_01.l59_01_answer;
 import questions.m59_02.m59_02_230220;
 import questions.m61.m61_230212;
 import questions.l03.l03_answer;
@@ -893,9 +894,9 @@ public class JUnit5TestClass {
      */
     @Test
     public void l59_01() {
-        l59_230219 l59230219 = new l59_230219();
+        l59_01_230219 l59230219 = new l59_01_230219();
         System.out.println(Arrays.toString(l59230219.maxSlidingWindow(new int[]{1, -1}, 1)));
-        l59_answer l59Answer = new l59_answer();
+        l59_01_answer l59Answer = new l59_01_answer();
         System.out.println(Arrays.toString(l59Answer.maxSlidingWindow(new int[]{1, 3, -1, -3, 5, 3, 6, 7}, 3)));
     }
 
@@ -927,6 +928,24 @@ public class JUnit5TestClass {
         System.out.println(m59230220.max_value());
         System.out.println(m59230220.pop_front());
         System.out.println(m59230220.max_value());
+    }
+
+    @Test
+    public void l37() {
+        TreeNode treeNode1 = new TreeNode(1);
+        TreeNode treeNode2 = new TreeNode(2);
+        TreeNode treeNode3 = new TreeNode(3);
+        TreeNode treeNode4 = new TreeNode(4);
+        TreeNode treeNode5 = new TreeNode(5);
+        treeNode1.left = treeNode2;
+        treeNode1.right = treeNode3;
+        treeNode3.left = treeNode4;
+        treeNode3.right = treeNode5;
+        l37_230220 l37230220 = new l37_230220();
+        System.out.println(l37230220.serialize(treeNode1));
+        String serialize = l37230220.serialize(treeNode1);
+        l37230220.deserialize(serialize)
+        System.out.println("");
     }
 }
 
