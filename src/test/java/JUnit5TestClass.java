@@ -5,13 +5,16 @@ import entity.TreeNode;
 import questions.l03.l03_230214;
 import questions.l04.l04_230214;
 import questions.l07.l07_answer;
+import questions.l10_01.l10_01_230222;
 import questions.l11.l11_230219;
 import questions.l15.l15_230216;
+import questions.l27.l27_230222;
 import questions.l29.l29_230220;
 import questions.l32_01.l32_01_230219;
 import questions.l32_02.l32_02_230219;
 import questions.l32_03.l32_03_230219;
 import questions.l37.l37_230220;
+import questions.l38.l38_answer;
 import questions.l40.l40_230212;
 import questions.l50.l50_230219;
 import questions.l53_1.l53_230214;
@@ -424,7 +427,14 @@ public class JUnit5TestClass {
         System.out.println(treeANode1);
         System.out.println("-------------------------");
         System.out.println(l27_230202.mirrorTree(treeANode1));
+
+        l27_230222 l27230222 = new l27_230222();
+        System.out.println("230222 mirrorTreeAuxiliary");
+        System.out.println(l27230222.mirrorTreeAuxiliary((treeANode1)));
+        System.out.println("230222 mirrorTreeRecur");
+        System.out.println(l27230222.mirrorTreeRecur((treeANode1)));
     }
+
 
     /**
      * 剑指 Offer 28. 对称的二叉树
@@ -453,7 +463,7 @@ public class JUnit5TestClass {
         System.out.println("-------------------------");
 
         l28_answer l28_answer = new l28_answer();
-        System.out.println(l28_answer.isSymmetric(null));
+        System.out.println(l28_answer.isSymmetric(treeANode1));
     }
 
     /**
@@ -470,6 +480,9 @@ public class JUnit5TestClass {
         System.out.println("-----------------------------");
         l10_02_230203 l10_02_230203 = new l10_02_230203();
         System.out.println(l10_02_230203.numWays(2));
+
+        l10_01_230222 l1001230222 = new l10_01_230222();
+        System.out.println(l1001230222.fib(50));
     }
 
     /**
@@ -930,6 +943,10 @@ public class JUnit5TestClass {
         System.out.println(m59230220.max_value());
     }
 
+    /**
+     * 剑指 Offer 37. 序列化二叉树
+     * <a href="https://leetcode.cn/problems/xu-lie-hua-er-cha-shu-lcof/">l37</a>
+     */
     @Test
     public void l37() {
         TreeNode treeNode1 = new TreeNode(1);
@@ -944,8 +961,18 @@ public class JUnit5TestClass {
         l37_230220 l37230220 = new l37_230220();
         System.out.println(l37230220.serialize(treeNode1));
         String serialize = l37230220.serialize(treeNode1);
-        l37230220.deserialize(serialize)
+        l37230220.deserialize(serialize);
         System.out.println("");
+    }
+
+    /**
+     * 剑指 Offer 38. 字符串的排列
+     * <a href="https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/">l38</a>
+     */
+    @Test
+    public void l38() {
+        l38_answer l38Answer = new l38_answer();
+        System.out.println(Arrays.toString(l38Answer.permutation("aba")));
     }
 }
 
