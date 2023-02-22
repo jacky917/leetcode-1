@@ -16,12 +16,16 @@ import questions.l32_03.l32_03_230219;
 import questions.l37.l37_230220;
 import questions.l38.l38_answer;
 import questions.l40.l40_230212;
+import questions.l42.l42_230222;
+import questions.l46.l46_230223;
+import questions.l47.l47_230222;
 import questions.l50.l50_230219;
 import questions.l53_1.l53_230214;
 import questions.l55_1.l55_01_230215;
 import questions.l56_02.l56_02_answer;
 import questions.l59_01.l59_01_230219;
 import questions.l59_01.l59_01_answer;
+import questions.l63.l63_230222;
 import questions.m59_02.m59_02_230220;
 import questions.m61.m61_230212;
 import questions.l03.l03_answer;
@@ -493,6 +497,8 @@ public class JUnit5TestClass {
     public void l63() {
         l63_230204 l63_230204 = new l63_230204();
         System.out.println(l63_230204.maxProfit(new int[]{7, 1, 5, 3, 6, 4}));
+        l63_230222 l63230222 = new l63_230222();
+        System.out.println(l63230222.maxProfit(new int[]{7, 1, 5, 3, 6, 4}));
     }
 
     /**
@@ -504,6 +510,9 @@ public class JUnit5TestClass {
         l42_answer l42_answer = new l42_answer();
         System.out.println(l42_answer.maxSubArray1(new int[]{999, -9999, 50}));
         System.out.println(l42_answer.maxSubArray2(new int[]{999, -9999, 50}));
+
+        l42_230222 l42230222 = new l42_230222();
+        System.out.println(l42230222.maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4})); // 6
     }
 
     /**
@@ -515,6 +524,8 @@ public class JUnit5TestClass {
 //        當前 + Math.max(右邊，下邊)
         l47_230204 l47_230204 = new l47_230204();
         System.out.println(l47_230204.maxValue(new int[][]{{1, 3, 1}, {1, 5, 1}, {4, 2, 1}}));
+        l47_230222 l47230222 = new l47_230222();
+        System.out.println(l47230222.maxValue(new int[][]{{1, 3, 1}, {1, 5, 1}, {4, 2, 1}}));
     }
 
     /**
@@ -525,6 +536,8 @@ public class JUnit5TestClass {
     public void l46() {
         l46_230205 l46_230205 = new l46_230205();
         System.out.println(l46_230205.translateNum(25));
+        l46_230223 l46230223 = new l46_230223();
+        System.out.println(l46230223.translateNum(506));
     }
 
     /**
