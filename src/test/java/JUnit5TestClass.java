@@ -8,6 +8,7 @@ import questions.l07.l07_answer;
 import questions.l10_01.l10_01_230222;
 import questions.l11.l11_230219;
 import questions.l15.l15_230216;
+import questions.l18.l18_230223;
 import questions.l27.l27_230222;
 import questions.l29.l29_230220;
 import questions.l32_01.l32_01_230219;
@@ -569,11 +570,20 @@ public class JUnit5TestClass {
         listNode2.next = listNode3;
         listNode3.next = listNode4;
 
+        ListNodeA listNode5 = new ListNodeA(-3);
+        ListNodeA listNode6 = new ListNodeA(5);
+        ListNodeA listNode7 = new ListNodeA(-99);
+        listNode5.next = listNode6;
+        listNode6.next = listNode7;
+
         l18_230205 l18230205 = new l18_230205();
         System.out.println(l18230205.deleteNode(listNode1, 5));
 
         l18_answer l18_answer = new l18_answer();
         System.out.println(l18_answer.deleteNode(listNode1, 5));
+
+        l18_230223 l18230223 = new l18_230223();
+        System.out.println(l18230223.deleteNode(listNode5, -3));
     }
 
     /**
