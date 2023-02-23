@@ -19,6 +19,7 @@ import questions.l40.l40_230212;
 import questions.l42.l42_230222;
 import questions.l46.l46_230223;
 import questions.l47.l47_230222;
+import questions.l48.l48_230223;
 import questions.l50.l50_230219;
 import questions.l53_1.l53_230214;
 import questions.l55_1.l55_01_230215;
@@ -547,7 +548,10 @@ public class JUnit5TestClass {
     @Test
     public void l48() {
         l48_230205 l48230205 = new l48_230205();
-        System.out.println(l48230205.lengthOfLongestSubstring("pwwkew"));
+        System.out.println(l48230205.lengthOfLongestSubstring("dvdf")); // 3
+        l48_230223 l48230223 = new l48_230223();
+        System.out.println(l48230223.lengthOfLongestSubstring("dvdf")); // 3
+        System.out.println(l48230223.lengthOfLongestSubstring("abc")); // 1
     }
 
     /**
