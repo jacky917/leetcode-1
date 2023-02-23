@@ -10,6 +10,7 @@ import questions.l11.l11_230219;
 import questions.l15.l15_230216;
 import questions.l18.l18_230223;
 import questions.l22.l22_230223;
+import questions.l25.l25_230223;
 import questions.l27.l27_230222;
 import questions.l29.l29_230220;
 import questions.l32_01.l32_01_230219;
@@ -642,7 +643,10 @@ public class JUnit5TestClass {
 //        System.out.println(l25230206.mergeTwoLists(listNode1, listNode4));
         System.out.println("-----------");
         l25_answer l25Answer = new l25_answer();
-        System.out.println(l25Answer.mergeTwoLists(listNode1, listNode4));
+//        System.out.println(l25Answer.mergeTwoLists(listNode1, listNode4));
+
+        l25_230223 l25230223 = new l25_230223();
+        System.out.println(l25230223.mergeTwoLists(listNode1, listNode4));
     }
 
     /**
