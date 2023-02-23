@@ -9,6 +9,7 @@ import questions.l10_01.l10_01_230222;
 import questions.l11.l11_230219;
 import questions.l15.l15_230216;
 import questions.l18.l18_230223;
+import questions.l22.l22_230223;
 import questions.l27.l27_230222;
 import questions.l29.l29_230220;
 import questions.l32_01.l32_01_230219;
@@ -609,6 +610,9 @@ public class JUnit5TestClass {
 
         l22_answer l22Answer = new l22_answer();
         System.out.println(l22Answer.getKthFromEnd(listNode1, 3));
+
+        l22_230223 l22230223 = new l22_230223();
+        System.out.println(l22230223.getKthFromEnd(listNode1, 3));
     }
 
     /**
