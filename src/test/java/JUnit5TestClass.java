@@ -6,6 +6,7 @@ import questions.l03.l03_230214;
 import questions.l04.l04_230214;
 import questions.l07.l07_answer;
 import questions.l10_01.l10_01_230222;
+import questions.l10_02.l10_02_230305;
 import questions.l11.l11_230219;
 import questions.l15.l15_230216;
 import questions.l18.l18_230223;
@@ -493,10 +494,13 @@ public class JUnit5TestClass {
         System.out.println(l10_01_230203.fibDynamic(50));
         System.out.println("-----------------------------");
         l10_02_230203 l10_02_230203 = new l10_02_230203();
-        System.out.println(l10_02_230203.numWays(2));
+        System.out.println(l10_02_230203.numWays(44));
 
         l10_01_230222 l1001230222 = new l10_01_230222();
         System.out.println(l1001230222.fib(50));
+
+        l10_02_230305 l1002230305 = new l10_02_230305();
+        System.out.println(l1002230305.numWays(44));
     }
 
     /**
