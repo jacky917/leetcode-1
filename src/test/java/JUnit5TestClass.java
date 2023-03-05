@@ -12,6 +12,7 @@ import questions.l18.l18_230223;
 import questions.l22.l22_230223;
 import questions.l25.l25_230223;
 import questions.l27.l27_230222;
+import questions.l28.l28_230305;
 import questions.l29.l29_230220;
 import questions.l32_01.l32_01_230219;
 import questions.l32_02.l32_02_230219;
@@ -472,6 +473,11 @@ public class JUnit5TestClass {
 
         l28_answer l28_answer = new l28_answer();
         System.out.println(l28_answer.isSymmetric(treeANode1));
+
+        System.out.println("-------------------------");
+
+        l28_230305 l28230305 = new l28_230305();
+        System.out.println(l28230305.isSymmetric(treeANode1));
     }
 
     /**
