@@ -25,13 +25,13 @@ class Solution240302 {
         return result;
     }
     public static void main(String[] args) {
-        Solution240302 solution240219 = new Solution240302();
-//        System.out.println(solution240219.candy(new int[]{1,3,2,2,1})); // 7
-//        System.out.println(solution240219.candy(new int[]{5,4,1,2,3})); // 11
-//        System.out.println(solution240219.candy(new int[]{1,2,4,3,2,1})); // 13
-        System.out.println(solution240219.candy(new int[]{1,2,87,87,87,2,1})); // 13
-//        System.out.println(solution240219.candy(new int[]{1,2,87,87,87,2,1})); // 13
-//        System.out.println(solution240219.candy(new int[]{1,3,4,5,2})); // 11
+        Solution240302 solution240302 = new Solution240302();
+//        System.out.println(solution240302.candy(new int[]{1,3,2,2,1})); // 7
+//        System.out.println(solution240302.candy(new int[]{5,4,1,2,3})); // 11
+//        System.out.println(solution240302.candy(new int[]{1,2,4,3,2,1})); // 13
+        System.out.println(solution240302.candy(new int[]{1,2,87,87,87,2,1})); // 13
+//        System.out.println(solution240302.candy(new int[]{1,2,87,87,87,2,1})); // 13
+//        System.out.println(solution240302.candy(new int[]{1,3,4,5,2})); // 11
     }
 }
 
